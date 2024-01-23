@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WebStudio</title>
+    <style>
+
+    * {
+        font-family:Georgia, 'Times New Roman', Times, serif;
+    }
+
+    body {
+       margin: 0;
+    }
+
+    
+    .navbar {
+        width: 100%;
+        height: 60px;
+    }
+
+    .navbar .container {
+        height: inherit;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .navbar-menu {
+        list-style-type:none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+
+    .navbar-menu li {
+        display: inline-block;
+    }
+
+    .navbar-menu li a {
+        display: inline-block;
+        color: #212121;
+        text-decoration: none;
+        padding: 10px;
+        margin-right: 10px;
+        transition: all .07s ease-in-out;
+    }
+
+    .navbar-menu li a:hover {
+        color: #2196F3;
+    }
+
+    .navbar-wrap {
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    .navbar-logo {
+        font-weight: 700;
+        font-size: 26px;
+        text-decoration: none;
+        color: black;
+        margin-top:10px;
+        margin-left: 15px;
+    }
+
+    button {
+        width: 216px;
+        height: 50px;
+        border-radius: 4px;
+        border: 2px solid #2196F3;
+        background-color: #2196F3;
+        margin-top: 40px;
+        margin-bottom: 240px;
+        font-size: 16px;
+        color:#fff;
+        transition: all .1s ease-in-out;
+     }
+
+     button:hover {
+        transform: scale(1.05);
+     }
+
+    .decision_h2 {
+        color:#fff;
+        margin-left: auto;
+        margin-right:auto;
+        padding-top: 200px;
+        font-size: 44px;
+        width: 696px;
+        height: 50px;
+    }
+
+    .decision {
+        height: 600px;
+        background-color: #2F303A;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+
+    span {
+        color:#2196F3;
+    }
+
+    .advantages {
+        
+        padding-top: 30px ;
+        margin: 30px;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .advantages_1 {
+        display: inline-block;
+        width: 270px;
+    }
+
+    .advantages_2 {
+        display: inline-block;
+        width: 270px;
+    }
+
+    .advantages_3 {
+        display: inline-block;
+        width: 270px;
+    }
+    .advantages_4 {
+        display: inline-block;
+        width: 270px;;
+    }
+
+    .work {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .work h2 {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+
+    .decision {
+        text-align: center;
+    }
+
+    .team {
+        padding-top: 40px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+
+    .team h2 {
+        font-size: 26px;
+        margin-bottom: 50px;
+    }
+
+    .card_1 {
+        display: inline-block;
+    }
+
+    .card_2 {
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    .card_3 {
+        display: inline-block;
+        margin-left: 30px;
+    }
+    .card_4 {
+        display: inline-block;
+        margin-left: 30px;
+    }
+
+    .education {
+        opacity: 0.7;
+    }
+
+    footer {
+        width: 100%;
+        height: 200px;
+        background-color:#2F303A;
+    }
+
+    footer p {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: auto;
+        padding-top: 30px;
+        padding-left: 40px;
+        padding-bottom: 0;
+
+    }
+
+    footer a {
+      text-decoration: none;
+      color: black;
+      opacity: 0.7;
+
+    }
+
+    .footer-menu {
+        display: inline-block;
+        color: #fff;
+        text-decoration: none;
+        padding: 5px;
+    }
+
+    .footer-menu li {
+        list-style-type:none;
+        padding-left: 0;
+        margin-bottom: 0;
+        padding-top: 5px;
+    }
+
+    .footer-feedback {
+        margin-left: 40px;
+        display: inline-block;
+        color: #fff;
+        opacity: 0.6;
+        text-decoration: none;
+    }
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="container">
+           <a href="#" class="navbar-logo"><span>Web</span>Studio</a>
+
+           <div class="navbar-wrap">
+            <ul class="navbar-menu">
+                <li><a href="#">Студія</a></li>
+                <li><a href="#">Портфоліо</a></li>
+                <li><a href="#">Контакти</a></li> 
+                <li><a href="#">info@devstudio.com</a></li>
+                <li><pre><a href="#">+38 096 111 11 11</a></pre></li>
+              </ul>
+        </div>
+    </div>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <div class="decision">
+        <h2 class="decision_h2">ЕФЕКТИНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h2>
+        <button>Замовити послугу</button>
+        </div>
+      </section>
+      <section>
+        <div class="advantages">
+        <article class="advantages_1">
+          <h3>УВАГА ДО ДЕТАЛЕЙ</h3>
+          <p>
+            Ідейні міркування, і навіть початок повсякденної роботи з фломування
+            позиції
+          </p>
+        </article>
+        <article class="advantages_2">
+          <h3>ПУНКТУАЛЬНІСТЬ</h3>
+          <p>
+            Завдання організації, особливо рамки і місце навчання кадрів тягне у
+            себе
+          </p>
+        </article>
+        <article class="advantages_3">
+          <h3>ПЛАНУВАННЯ</h3>
+          <p>так само консультація з широким активом значною мірою зумовлює.</p>
+        </article>
+        <article class="advantages_4">
+          <h3>СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+          <p>
+            Значимість цих пробоем настільки очевидна, що реалізація планових
+            завдань.
+          </p>
+        </article>
+      </section>
+      <section>
+        <div class="work">
+        <h2>Чим ми займаємося</h2>
+        <img src="./img/workspace.jpg" alt="workspace" />
+        <img src="./img/mobile.jpg" alt="mobile" />
+        <img src="./img/tablet.jpg" alt="tablet" />
+        
+        </div>
+      </section>
+      <section>
+        <div class="team">
+          <h2>Наша команда</h2>
+          <article class="card_1">
+            <img src="./img/igor.jpg" alt="igor" width="270" height="260" />
+            <p>Ігор Дем'яненко</p>
+            <p class="education">Product Designer</p>
+          </article>
+          <article class="card_2">
+            <img src="./img/olga.jpg" alt="olga" width="270" height="260" />
+            <p>Ольга Рєпіна</p>
+            <p class="education">Frontend Developer</p>
+          </article>
+          <article class="card_3">
+            <img src="./img/mikola.jpg" alt="mikola" width="270" height="260" />
+            <p>Микола Тарасов</p>
+            <p class="education">Marketing</p>
+          </article>
+          <article class="card_4">
+            <img
+              src="./img/mikhailo.jpg"
+              alt="mikhailo"
+              width="270"
+              height="260"
+            />
+            <p>Михайло Єрмаков</p>
+            <p class="education">UI Designer</p>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p><span>Web</span>Studio</p>
+      <div class="footer-menu">
+      <ul>
+        <li>м.Київ, пр-т Лесі Українки, 26</li>
+      </ul>
+      <div class="footer-feedback">
+        <a href="#">info@devstudio.com</a>
+        <pre><a href="#">+38 096 111 11 11</a></pre>
+    </div>
+    </div>
+    </footer>
+  </body>
+</html>
