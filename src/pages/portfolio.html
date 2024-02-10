@@ -8,30 +8,26 @@
   </head>
   <body>
     <header>
-      <div class="navbar">
-        <div class="container">
-          <h1>
-            <a href="#" class="navbar-logo"><span>Web</span>Studio</a>
-          </h1>
-          <nav class="navbar-wrap">
-            <div>
-              <ul class="navbar-menu">
-                <li><a href="#">Студія</a></li>
-                <li><a href="./src/portfolio.html">Портфоліо</a></li>
-                <li><a href="#">Контакти</a></li>
-              </ul>
-              <ul class="navbar-contact">
-                <li>
-                  <a href="mailto:info@devstudio.com"> info@devstudio.com </a>
-                </li>
-                <li>
-                  <a href="tel:+380961111111">+38 096 111 11 11</a>
-                </li>
-              </ul>
-            </div>
-          </nav>
+      <a href="#" class="navbar-logo"
+        ><img src="../img/logo/WebStudio.svg" alt="лого"
+      /></a>
+      <nav class="navbar-wrap">
+        <div>
+          <ul class="navbar-menu">
+            <li><a href="#">Студія</a></li>
+            <li><a href="./src/pages/portfolio.html">Портфоліо</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+          <ul class="navbar-contact">
+            <li>
+              <a href="mailto:info@devstudio.com"> info@devstudio.com </a>
+            </li>
+            <li>
+              <a href="tel:+380961111111">+38 096 111 11 11</a>
+            </li>
+          </ul>
         </div>
-      </div>
+      </nav>
     </header>
     <main>
       <section>
@@ -45,79 +41,92 @@
               <li><button>Маркетинг</button></li>
             </ul>
           </div>
-          <article class="card1">
-            <div>
-              <img src="/src/img/portfolio/web-site.jpg" alt="web-site" />
-            </div>
-            <h3>Технокряк</h3>
-            <p>Веб-сайт</p>
-          </article>
-          <article class="card2">
-            <div><img src="/src/img/portfolio/design.jpg" alt="design" /></div>
-            <h3>Постер New Orleane vs Golden Star</h3>
-            <p>Дизайн</p>
-          </article>
-          <article class="card3">
-            <div>
-              <img src="/src/img/portfolio/appseafood.jpg" alt="appseafood" />
-            </div>
-            <h3>Ресторан Seafood</h3>
-            <p>Додаток</p>
-          </article>
-          <article class="card4">
-            <div>
-              <img
-                src="/src/img/portfolio/marketingheadphone.jpg"
-                alt="marketingheadphone"
-              />
-            </div>
-            <h3>Проєкт Prime</h3>
-            <p>Маркетинг</p>
-          </article>
-          <article class="card5">
-            <div>
-              <img src="/src/img/portfolio/appboxes.jpg" alt="appboxes" />
-            </div>
-            <h3>Проєкт Boxes</h3>
-            <p>Додаток</p>
-          </article>
-          <article class="card6">
-            <div>
-              <img
-                src="/src/img/portfolio/web-siteborders.jpg"
-                alt="web-siteborders"
-              />
-            </div>
-            <h3>Inspiration has no Borders</h3>
-            <p>Веб-сайт</p>
-          </article>
-          <article class="card7">
-            <div>
-              <img
-                src="/src/img/portfolio/designnewspaper.jpg"
-                alt="designnewspaper"
-              />
-            </div>
-            <h3>Видання Limited Edition</h3>
-            <p>Дизайн</p>
-          </article>
-          <article class="card8">
-            <div>
-              <img
-                src="/src/img/portfolio/marketingLAB.jpg"
-                alt="marketingLAB"
-              />
-            </div>
-            <h3>Проєкт LAB</h3>
-            <p>Маркетинг</p>
-          </article>
-          <article class="card9">
-            <div>
-              <img src="/src/img/portfolio/appbussines.jpg" alt="appbussines" />
-            </div>
-            <h3>Growing Business</h3>
-            <p>Додаток</p>
-          </article>
+          <div class="card">
+            <article>
+              <div>
+                <img src="/src/img/portfolio/web-site.jpg" alt="Веб-сайт" />
+              </div>
+              <h3>Технокряк</h3>
+              <p>Веб-сайт</p>
+            </article>
+            <article>
+              <div>
+                <img src="/src/img/portfolio/design.jpg" alt="Дизайн" />
+              </div>
+              <h3>Постер New Orleane vs Golden Star</h3>
+              <p>Дизайн</p>
+            </article>
+            <article>
+              <div>
+                <img
+                  src="/src/img/portfolio/appseafood.jpg"
+                  alt="Додаток ресторан"
+                />
+              </div>
+              <h3>Ресторан Seafood</h3>
+              <p>Додаток</p>
+            </article>
+            <article>
+              <div>
+                <img
+                  src="/src/img/portfolio/marketingheadphone.jpg"
+                  alt="Маркетинг навушники"
+                />
+              </div>
+              <h3>Проєкт Prime</h3>
+              <p>Маркетинг</p>
+            </article>
+            <article>
+              <div>
+                <img
+                  src="/src/img/portfolio/appboxes.jpg"
+                  alt="Додаток коробки"
+                />
+              </div>
+              <h3>Проєкт Boxes</h3>
+              <p>Додаток</p>
+            </article>
+            <article>
+              <div>
+                <img
+                  src="/src/img/portfolio/web-siteborders.jpg"
+                  alt="Веб-сайт стіни"
+                />
+              </div>
+              <h3>Inspiration has no Borders</h3>
+              <p>Веб-сайт</p>
+            </article>
+            <article>
+              <div>
+                <img
+                  src="/src/img/portfolio/designnewspaper.jpg"
+                  alt="Дизайн газети"
+                />
+              </div>
+              <h3>Видання Limited Edition</h3>
+              <p>Дизайн</p>
+            </article>
+            <article>
+              <div>
+                <img
+                  src="/src/img/portfolio/marketingLAB.jpg"
+                  alt="Маркетинг ЛАБ"
+                />
+              </div>
+              <h3>Проєкт LAB</h3>
+              <p>Маркетинг</p>
+            </article>
+            <article>
+              <div>
+                <img
+                  src="/src/img/portfolio/appbussines.jpg"
+                  alt="Додаток бізнес"
+                />
+              </div>
+              <h3>Growing Business</h3>
+              <p>Додаток</p>
+            </article>
+          </div>
         </div>
       </section>
     </main>
