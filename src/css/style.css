@@ -12,6 +12,59 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 14px;
   line-height: 1.364;
   color: var(--colorDefault);
+}
+
+.footer {
+  background-color: var(--colorBackgroung);
+}
+
+.hero-button {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+}
+
+.advantages-list-title {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.advantages-list-text {
+  line-height: 1.71;
+}
+
+.work-title .team-title {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.card-name {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.education {
+  font-weight: 400;
+  font-size: 16px;
+  opacity: 0.7;
+}
+
+.footer-list-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.71;
+  list-style-type: none;
+}
+
+.footer-list-address {
+  color: var(--colorPage);
+  font-style: normal;
+}
+
+.footer-list-link {
+  text-decoration: none;
+  color: var(--colorOpacity);
 }
