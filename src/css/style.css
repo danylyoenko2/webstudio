@@ -3,7 +3,8 @@
   --colorHover: #2196f3;
   --colorBackgroung: #2f303a;
   --colorDefault: #212121;
-  --colorOpacity: #757575.60;
+  --colorOpacityContact: rgba(0, 0, 0, 0.6);
+  --colorOpacity: rgba(255, 255, 255, 0.6);
   --colorTeam: #f5f4fa;
   --colorPage: #ececec;
 }
@@ -17,14 +18,55 @@ body {
   color: var(--colorDefault);
 }
 
-.footer {
+a {
+  color: inherit;
+}
+
+.menu {
+  color: var(--colorDefault);
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+}
+
+.menu-contact-list {
+  color: var(--colorOpacityContact);
+}
+
+.menu-list-item:hover {
+  color: var(--colorHover);
+}
+
+.menu-contact-list:hover {
+  color: var(--colorHover);
+}
+
+.hero {
   background-color: var(--colorBackgroung);
+  text-align: center;
+}
+
+.hero-container {
+  padding-top: 200px;
+}
+
+.hero-title {
+  font-size: 40px;
+  color: var(--colorPage);
 }
 
 .hero-button {
+  color: var(--colorPage);
+  max-width: 216px;
+  max-height: 60px;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
+  border: 2px solid var(--colorHover);
+  padding: 10px 32px;
+  background-color: var(--colorHover);
+  border-radius: 4px;
+  margin-bottom: 200px;
 }
 
 .advantages-list-title {
@@ -41,15 +83,47 @@ body {
   font-weight: 700;
 }
 
-.card-name {
+.team-name {
   font-weight: 500;
   font-size: 16px;
 }
 
-.education {
+.team-education {
   font-weight: 400;
   font-size: 16px;
   opacity: 0.7;
+}
+
+/* =================portfolio===================== */
+
+.card {
+  width: 370px;
+}
+
+.card-photo {
+  width: 370px;
+}
+
+.card-title {
+  color: var(--colorDefault);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.card-name {
+  color: var(--colorOpacity);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+}
+
+/* =================portfolio===================== */
+
+.footer {
+  background-color: var(--colorBackgroung);
 }
 
 .footer-list-item {

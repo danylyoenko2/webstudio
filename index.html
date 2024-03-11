@@ -9,11 +9,19 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./src/css/reset.css" />
     <link rel="stylesheet" href="/src/css/style.css" />
     <title>WebStudio</title>
   </head>
   <body>
-    <header class="headre">
+    <header class="header">
       <a href="#" class="header-link-logo"
         ><img class="header-logo" src="./src/img/logo/WebStudio.svg" alt="лого"
       /></a>
@@ -113,41 +121,41 @@
         <div class="team-container">
           <h2 class="team-title">Наша команда</h2>
           <div class="team-cards">
-            <article class="card">
+            <article class="team-members">
               <img
-                class="card-photo"
+                class="team-photo"
                 src="/src/img/face/team/igor.jpg"
                 alt="Ігор Дем'яненко"
               />
-              <p class="card-name">Ігор Дем'яненко</p>
-              <p class="education">Product Designer</p>
+              <p class="team-name">Ігор Дем'яненко</p>
+              <p class="team-education">Product Designer</p>
             </article>
-            <article class="card">
+            <article class="team-members">
               <img
                 class="card-photo"
                 src="/src/img/face/team/olga.jpg"
                 alt="Ольга Рєпіна"
               />
-              <p class="card-name">Ольга Рєпіна</p>
-              <p class="education">Frontend Developer</p>
+              <p class="team-name">Ольга Рєпіна</p>
+              <p class="team-education">Frontend Developer</p>
             </article>
-            <article class="card">
+            <article class="team-members">
               <img
-                class="card-photo"
+                class="team-photo"
                 src="/src/img/face/team/mikola.jpg"
                 alt="Микола Тарасов"
               />
-              <p class="card-name">Микола Тарасов</p>
-              <p class="education">Marketing</p>
+              <p class="team-name">Микола Тарасов</p>
+              <p class="team-education">Marketing</p>
             </article>
             <article class="card">
               <img
-                class="card-photo"
+                class="team-photo"
                 src="/src/img/face/team/mikhailo.jpg"
                 alt="Михайло Єрмаков"
               />
-              <p class="card-name">Михайло Єрмаков</p>
-              <p class="education">UI Designer</p>
+              <p class="team-name">Михайло Єрмаков</p>
+              <p class="team-education">UI Designer</p>
             </article>
           </div>
         </div>
@@ -155,7 +163,10 @@
     </main>
     <footer class="footer">
       <a class="footer-logo-link" href="#"
-        ><img class="footer-logo" src="./src/img/logo/WebStudio.svg" alt="лого"
+        ><img
+          class="footer-logo"
+          src="./src/img/logo/WebStudio_footer.svg"
+          alt="лого"
       /></a>
       <div class="footer-menu">
         <ul class="footer-list">
