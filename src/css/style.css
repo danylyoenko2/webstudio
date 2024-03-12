@@ -96,15 +96,15 @@ a {
 
 /* =================portfolio===================== */
 
-.card {
+.portfolio-card {
   width: 370px;
 }
 
-.card-photo {
+.portfolio-card-photo {
   width: 370px;
 }
 
-.card-title {
+.portfolio-card-title {
   color: var(--colorDefault);
   font-size: 18px;
   font-weight: 700;
@@ -112,8 +112,8 @@ a {
   letter-spacing: 0.06em;
 }
 
-.card-name {
-  color: var(--colorOpacity);
+.portfolio-card-name {
+  color: var(--colorOpacityContact);
   font-size: 16px;
   font-weight: 400;
   line-height: 1.87;
