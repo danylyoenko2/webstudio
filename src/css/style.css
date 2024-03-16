@@ -37,11 +37,8 @@ a {
   letter-spacing: 0.02em;
   position: relative;
   bottom: 70px;
-  left: ;
 }
 
-.menu-list {
-}
 .menu-contact-list {
   color: var(--colorOpacityContact);
 }
