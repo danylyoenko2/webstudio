@@ -7,3 +7,8 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+li {
+  text-decoration: none;
+  list-style-type: none;
+}

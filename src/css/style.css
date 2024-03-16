@@ -22,13 +22,26 @@ a {
   color: inherit;
 }
 
+.header {
+  height: 80px;
+}
+
+.header-logo {
+  margin: 24px 1154px 25px 215px;
+}
+
 .menu {
   color: var(--colorDefault);
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
+  position: relative;
+  bottom: 70px;
+  left: ;
 }
 
+.menu-list {
+}
 .menu-contact-list {
   color: var(--colorOpacityContact);
 }
@@ -124,6 +137,17 @@ a {
 
 .footer {
   background-color: var(--colorBackgroung);
+}
+
+.footer-logo {
+  margin-top: 60px;
+  margin-left: 215px;
+}
+
+.footer-menu {
+  margin-top: 20px;
+  margin-left: 215px;
+  padding-bottom: 60px;
 }
 
 .footer-list-item {
