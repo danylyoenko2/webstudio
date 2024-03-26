@@ -19,7 +19,7 @@ body {
 }
 
 .container {
-  max-width: 1570px;
+  max-width: 1170px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -88,11 +88,6 @@ body {
   padding-top: 94px;
 }
 
-.advantages-list {
-  padding-left: 215px;
-  padding-right: 215px;
-}
-
 .advantages-list-title {
   font-size: 14px;
   font-weight: 700;
@@ -106,17 +101,11 @@ body {
   padding-top: 94px;
 }
 
-.work-photos {
-  padding-left: 215px;
-  padding-right: 215px;
-}
-
 .work-title {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
-  padding-bottom: 50px;
 }
 
 .team {
@@ -124,13 +113,7 @@ body {
   padding-bottom: 94px;
 }
 
-.team-cards {
-  padding-left: 215px;
-  padding-right: 215px;
-}
-
 .team-title {
-  padding-bottom: 50px;
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
@@ -154,11 +137,6 @@ body {
 .portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
-}
-
-.portfolio-cards {
-  padding-right: 215px;
-  padding-left: 215px;
 }
 
 .portfolio-card {
