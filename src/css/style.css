@@ -30,11 +30,36 @@ body {
   padding: 25px 0;
 }
 
+.header-container {
+  display: flex;
+  column-gap: 93px;
+}
+
 .menu {
   color: var(--colorDefault);
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 50px;
+  flex-grow: 1;
+}
+
+.menu-contact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  column-gap: 50px;
 }
 
 .menu-contact-list {
@@ -52,9 +77,20 @@ body {
 .hero {
   background-color: var(--colorBackgroung);
   text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
 }
 
 .hero-title {
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 136%;
@@ -79,6 +115,12 @@ body {
   padding-top: 94px;
 }
 
+.advantages-list {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
 .advantages-list-title {
   font-weight: 700;
   font-size: 14px;
@@ -94,11 +136,6 @@ body {
   letter-spacing: 0.03em;
 }
 
-.hero-container {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
 .work {
   padding-top: 94px;
   padding-bottom: 94px;
@@ -109,12 +146,30 @@ body {
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
+  padding-bottom: 50px;
+}
+
+.work-photo {
+  width: 370px;
+  height: 294px;
+  column-gap: 30px;
 }
 
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
   background-color: var(--colorTeam);
+}
+
+.team-title {
+  padding-bottom: 50px;
+}
+
+.team-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
 }
 
 .team-photo {
