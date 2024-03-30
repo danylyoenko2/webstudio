@@ -149,6 +149,12 @@ body {
   padding-bottom: 50px;
 }
 
+.work-photos {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 30px;
+}
+
 .work-photo {
   width: 370px;
   height: 294px;
