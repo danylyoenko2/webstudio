@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -21,4 +22,9 @@ h5,
 h6 {
   font-weight: inherit;
   font-size: inherit;
+}
+
+button {
+  border: none;
+  outline: none;
 }
