@@ -113,6 +113,7 @@ body {
 
 .advantages {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .advantages-list {
@@ -126,6 +127,7 @@ body {
   font-size: 14px;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .advantages-list-text {
@@ -212,21 +214,18 @@ body {
   padding-bottom: 94px;
 }
 
-.portfolio-container {
-  max-width: 575px;
-  margin: 0 auto;
-}
-
 .portfolio-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 50px;
+  max-width: 575px;
+  margin: 0 auto;
 }
 
 .portfolio-list-button {
   width: 73px;
   height: 38px;
+  margin-bottom: 50px;
 }
 
 .portfolio-list-button:hover {
