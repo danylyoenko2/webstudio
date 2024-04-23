@@ -125,6 +125,7 @@ img {
   content: "";
   display: block;
   height: 70px;
+  background-color: var(--colorTeam);
   background-image: url(../img/icons/antenna.svg);
   background-size: contain;
   background-position: center;
