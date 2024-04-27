@@ -210,7 +210,10 @@ img {
 }
 
 .team-member {
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
   flex-basis: calc((100% - 90px) / 4);
+  border-radius: 0 0 4px 4px;
 }
 
 .team-photo {
@@ -284,7 +287,15 @@ img {
 
 .portfolio-card {
   width: 370px;
+  border: 1px solid #eee;
   flex-basis: calc((100% - 60px) / 3);
+}
+
+.portfolio-card:hover {
+  box-shadow: 1px 4px 6px 0 rgba(0, 0, 0, 0.16), 0 4px 4px 0 rgba(0, 0, 0, 0.06),
+    0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  transform: translate(0px, -5px);
+  transition: transform 0.35s ease-in;
 }
 
 .portfolio-card-photo {
