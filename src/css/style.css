@@ -84,6 +84,10 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: url(../img/bg/herobg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-container {
