@@ -214,7 +214,6 @@ img {
   justify-content: center;
   align-items: center;
   column-gap: 30px;
-  background-color: var(--colorMain);
 }
 
 .team-member {
@@ -222,6 +221,7 @@ img {
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
   flex-basis: calc((100% - 90px) / 4);
   border-radius: 0 0 4px 4px;
+  background-color: var(--colorMain);
 }
 
 .team-photo {
