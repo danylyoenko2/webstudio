@@ -128,7 +128,6 @@ img {
 }
 
 .advantages {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -200,8 +199,6 @@ img {
 }
 
 .work-photo {
-  width: 370px;
-  height: 294px;
   column-gap: 30px;
   flex-basis: calc((100% - 60px) / 3);
 }
@@ -303,6 +300,7 @@ img {
 .portfolio-card {
   border: 1px solid #eee;
   flex-basis: calc((100% - 60px) / 3);
+  padding-bottom: 20px;
 }
 
 .portfolio-card:hover {
@@ -327,6 +325,7 @@ img {
   font-weight: 700;
   line-height: 2;
   letter-spacing: 0.06em;
+  padding-left: 24px;
 }
 
 .portfolio-card-name {
@@ -335,6 +334,7 @@ img {
   font-weight: 400;
   line-height: 1.87;
   letter-spacing: 0.03em;
+  padding-left: 24px;
 }
 
 /* =================portfolio===================== */
