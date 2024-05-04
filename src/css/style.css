@@ -314,11 +314,6 @@ img {
   margin-bottom: 20px;
 }
 
-.service-footing {
-  padding-left: 24px;
-  padding-right: 24px;
-}
-
 .portfolio-card-title {
   color: var(--colorDefault);
   font-size: 18px;
@@ -326,6 +321,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   padding-left: 24px;
+  padding-right: 24px;
 }
 
 .portfolio-card-name {
@@ -335,6 +331,7 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   padding-left: 24px;
+  padding-right: 24px;
 }
 
 /* =================portfolio===================== */
