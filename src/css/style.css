@@ -94,9 +94,11 @@ img {
   transition: color 0.2s ease;
 }
 
-.menu-contact-link:nth-child(2) {
+.menu-phone-icon {
   width: 10px;
   height: 16px;
+  fill: var(--colorClients);
+  transition: color 0.2s ease;
 }
 
 .menu-list-item:hover {
@@ -107,7 +109,8 @@ img {
   color: var(--colorHover);
 }
 
-.menu-contact-list:hover .menu-contact-icon {
+.menu-contact-list:hover .menu-contact-icon,
+.menu-contact-list:hover .menu-phone-icon {
   fill: #2196f3;
 }
 
