@@ -374,25 +374,21 @@ img {
   column-gap: 30px;
 }
 
-.client {
+.client-link {
+  padding: 16px 32px;
+  display: block;
   border-radius: 4px;
   transition: border 0.2s ease;
   border: 1px solid var(--colorClients);
   border-radius: 4px;
-  padding-top: 16px;
-  padding-bottom: 16px;
 }
 
-.client:hover {
+.client-link:hover {
   border: 1px solid var(--colorHover);
 }
 
 .client:hover .client-icon {
   fill: var(--colorHover);
-}
-
-.client-link {
-  padding: 16px 32px;
 }
 
 .client-icon {
