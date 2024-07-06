@@ -10,6 +10,7 @@
   --colorAdvantages: #757575;
   --colorOverlay: rgba(39, 48, 58, 0.4);
   --colorClients: #afb1b8;
+  --colorWork: rgba(47, 48, 58, 0.8);
 }
 
 body {
@@ -160,14 +161,11 @@ img {
   background-color: var(--colorHover);
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  transition: background-color 0.3s ease-in;
+  transition: all 0.2s ease-in;
 }
 
 .hero-button:hover {
-  border: 2px solid var(--colorHover);
-  padding: 8px 30px;
-  background-color: var(--colorOverlay);
-  box-shadow: inset 0px 0px 10px 3px var(--colorHover);
+  transform: scale(1.05);
 }
 
 /* ====================advantages======================== */
@@ -248,6 +246,20 @@ img {
 .work-photo {
   column-gap: 30px;
   flex-basis: calc((100% - 60px) / 3);
+}
+
+.work-text {
+  color: var(--colorMain);
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  bottom: 73px;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  background-color: var(--colorWork);
 }
 
 /* ====================team======================== */
@@ -363,10 +375,12 @@ img {
 }
 
 .client {
+  border-radius: 4px;
+  transition: border 0.2s ease;
   border: 1px solid var(--colorClients);
   border-radius: 4px;
-  padding: 16px 32px;
-  transition: border 0.2s ease;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .client:hover {
@@ -378,8 +392,7 @@ img {
 }
 
 .client-link {
-  width: 170px;
-  height: 92px;
+  padding: 16px 32px;
 }
 
 .client-icon {
