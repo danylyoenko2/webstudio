@@ -255,8 +255,9 @@ img {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
-  position: relative;
-  bottom: 73px;
+  position: absolute;
+  bottom: -545px;
+  width: 370px;
   padding-top: 27px;
   padding-bottom: 27px;
   background-color: var(--colorWork);
