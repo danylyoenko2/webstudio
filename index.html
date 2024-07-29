@@ -32,7 +32,7 @@
         <nav class="menu">
           <ul class="menu-list">
             <li class="menu-list-item">
-              <a class="menu-list-link" href="#">Студія</a>
+              <a class="menu-list-link link-active" href="#">Студія</a>
             </li>
             <li class="menu-list-item">
               <a class="menu-list-link" href="./src/pages/portfolio.html"
@@ -84,72 +84,70 @@
                 Залиште свої дані, ми вам передзвонимо
               </h2>
               <form action="form" class="modal-forms">
-                <h4 class="modal-form-title">Ім'я</h4>
                 <div class="form-field">
-                  <label class="form-label" for="name">
+                  <label class="form-label" for="name">Ім'я</label>
+                  <div class="form-wrapper">
                     <svg class="modal-form-icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-person"
                       ></use>
                     </svg>
                     <input
-                      class="modal-form-input"
+                      class="form-input"
                       type="text"
                       name="name"
                       id="name"
                       required
                       minlength="3"
                     />
-                  </label>
+                  </div>
                 </div>
-
-                <h4 class="modal-form-title">Телефон</h4>
                 <div class="form-field">
-                  <label class="form-label" for="tel">
+                  <label class="form-label" for="tel">Телефон</label>
+                  <div class="form-wrapper">
                     <svg class="modal-form-icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-phone"
                       ></use>
                     </svg>
                     <input
-                      class="modal-form-input"
+                      class="form-input"
                       type="tel"
                       name="tel"
                       id="tel"
                       required
                     />
-                  </label>
+                  </div>
                 </div>
-
-                <h4 class="modal-form-title">Пошта</h4>
                 <div class="form-field">
-                  <label class="form-label" for="email">
+                  <label class="form-label" for="email">Пошта</label>
+                  <div class="form-wrapper">
                     <svg class="modal-form-icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-e-mail-black"
                       ></use>
                     </svg>
                     <input
-                      class="modal-form-input"
+                      class="form-input"
                       type="email"
                       name="email"
                       id="email"
                       required
                       placeholder="webstudio@gmail.com"
                     />
-                  </label>
+                  </div>
                 </div>
 
                 <h4 class="modal-form-title">Коментар</h4>
                 <div class="form-field modal-form-comment">
-                  <label class="form-label-comment" for="text">
-                    <input
-                      class="modal-form-input form-input-comment"
-                      type="text"
-                      name="text"
-                      id="text"
-                      placeholder="Введіть текст"
-                  /></label>
+                  <label class="form-label-comment" for="text"></label>
+                  <input
+                    class="form-input form-input-comment"
+                    type="text"
+                    name="text"
+                    id="text"
+                    placeholder="Введіть текст"
+                  />
                 </div>
                 <div class="checkbox-field">
                   <label for="checkbox" class="accept-btn"> </label>
