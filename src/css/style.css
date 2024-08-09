@@ -178,6 +178,7 @@ img {
   text-transform: uppercase;
   text-align: center;
   color: var(--colorPage);
+  animation: showLeft 1.5s ease 0s;
 }
 
 .hero-button {
@@ -190,10 +191,47 @@ img {
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color var(--animPrimery);
+  animation: showRight 1.5s ease 0.1s;
 }
 
 .hero-button:hover {
   background-color: var(--colorBtnHover);
+}
+
+@keyframes showLeft {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes showRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes showUp {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 /* ===============modal-window==================== */
@@ -406,6 +444,8 @@ img {
 
 .advantages-list-item {
   flex-basis: calc((100% - 90px) / 4);
+  animation: showUp 1.3s ease 0s;
+  z-index: -1;
 }
 
 .advantages-list-title {

@@ -17,6 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./src/css/reset.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/css/style.css" />
     <title>WebStudio</title>
   </head>
@@ -207,9 +208,15 @@
       </section>
       <section class="work">
         <div class="container">
-          <h2 class="work-title">Чим ми займаємося</h2>
+          <h2 class="work-title" data-aos="fade-up" data-aos-duration="600">
+            Чим ми займаємося
+          </h2>
           <div class="work-photos">
-            <div class="work-photo">
+            <div
+              class="work-photo"
+              data-aos="fade-right"
+              data-aos-duration="600"
+            >
               <img
                 class="work-img"
                 src="./src/img/face/example/workspace.webp"
@@ -217,7 +224,7 @@
               />
               <p class="work-text">декстопні додатки</p>
             </div>
-            <div class="work-photo">
+            <div class="work-photo" data-aos="zoom-in" data-aos-duration="600">
               <img
                 class="work-img"
                 src="./src/img/face/example/mobile.webp"
@@ -225,7 +232,11 @@
               />
               <p class="work-text">мобільні додатки</p>
             </div>
-            <div class="work-photo">
+            <div
+              class="work-photo"
+              data-aos="fade-left"
+              data-aos-duration="600"
+            >
               <img
                 class="work-img"
                 src="./src/img/face/example/tablet.webp"
@@ -238,11 +249,13 @@
       </section>
       <section class="team">
         <div class="container">
-          <h2 class="team-title">Наша команда</h2>
+          <h2 class="team-title" data-aos="fade-up" data-aos-duration="600">
+            Наша команда
+          </h2>
           <div class="team-cards">
             <!-- ====================================1============================ -->
 
-            <article class="team-member">
+            <article class="team-member" data-aos="fade-right">
               <div class="team-member-photo">
                 <img
                   class="team-photo"
@@ -299,7 +312,7 @@
 
             <!-- ====================================2============================ -->
 
-            <article class="team-member">
+            <article class="team-member" data-aos="fade-up">
               <div class="team-members-photo">
                 <img
                   class="team-photo"
@@ -355,7 +368,7 @@
 
             <!-- ====================================3============================ -->
 
-            <article class="team-member">
+            <article class="team-member" data-aos="fade-up">
               <div class="team-member-photo">
                 <img
                   class="team-photo"
@@ -410,7 +423,7 @@
             </article>
             <!-- ====================================4============================ -->
 
-            <article class="team-member">
+            <article class="team-member" data-aos="fade-left">
               <div class="team-member-photo">
                 <img
                   class="team-photo"
@@ -468,9 +481,9 @@
       </section>
       <section class="permanent-clients">
         <div class="container">
-          <h2 class="clients-title">Постійні клієнти</h2>
+          <h2 class="clients-title" data-aos="fade-up">Постійні клієнти</h2>
           <ul class="clients">
-            <li class="client">
+            <li class="client" data-aos="fade-right" data-aos-duration="600">
               <a href="#" class="client-link">
                 <svg class="client-icon">
                   <use
@@ -479,7 +492,7 @@
                 </svg>
               </a>
             </li>
-            <li class="client">
+            <li class="client" data-aos="fade-right" data-aos-duration="600">
               <a href="#" class="client-link">
                 <svg class="client-icon">
                   <use
@@ -488,7 +501,7 @@
                 </svg>
               </a>
             </li>
-            <li class="client">
+            <li class="client" data-aos="fade-right" data-aos-duration="600">
               <a href="#" class="client-link">
                 <svg class="client-icon">
                   <use
@@ -497,7 +510,7 @@
                 </svg>
               </a>
             </li>
-            <li class="client">
+            <li class="client" data-aos="fade-left" data-aos-duration="600">
               <a href="#" class="client-link">
                 <svg class="client-icon">
                   <use
@@ -506,7 +519,7 @@
                 </svg>
               </a>
             </li>
-            <li class="client">
+            <li class="client" data-aos="fade-left" data-aos-duration="600">
               <a href="#" class="client-link">
                 <svg class="client-icon">
                   <use
@@ -515,7 +528,7 @@
                 </svg>
               </a>
             </li>
-            <li class="client">
+            <li class="client" data-aos="fade-left" data-aos-duration="600">
               <a href="#" class="client-link"
                 ><svg class="client-icon">
                   <use
@@ -618,5 +631,9 @@
       </div>
     </footer>
     <script src="./src/js/modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

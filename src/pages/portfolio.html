@@ -17,6 +17,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="../css/reset.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="../css/style.css" />
     <title>WebStudio</title>
   </head>
@@ -63,7 +64,7 @@
     </header>
     <main class="main">
       <section class="portfolio">
-        <div class="container">
+        <div class="container sorting-container">
           <ul class="portfolio-list">
             <li class="portfolio-list-item">
               <button class="portfolio-list-button">Усі</button>
@@ -82,7 +83,13 @@
             </li>
           </ul>
           <div class="portfolio-cards">
-            <article class="portfolio-card">
+            <article
+              class="portfolio-card"
+              data-aos="flip-up"
+              data-aos-duration="650"
+              data-aos-delay="50"
+              data-aos-once="true"
+            >
               <div class="portfolio-card-photo">
                 <img
                   class="portfolio-img"
@@ -98,7 +105,13 @@
               <h3 class="portfolio-card-title">Технокряк</h3>
               <p class="portfolio-card-name">Веб-сайт</p>
             </article>
-            <article class="portfolio-card">
+            <article
+              class="portfolio-card"
+              data-aos="flip-up"
+              data-aos-duration="650"
+              data-aos-delay="150"
+              data-aos-once="true"
+            >
               <div class="portfolio-card-photo">
                 <img
                   class="pportfolio-img"
@@ -116,7 +129,13 @@
               </h3>
               <p class="portfolio-card-name">Дизайн</p>
             </article>
-            <article class="portfolio-card">
+            <article
+              class="portfolio-card"
+              data-aos="flip-up"
+              data-aos-duration="650"
+              data-aos-delay="250"
+              data-aos-once="true"
+            >
               <div class="portfolio-card-photo">
                 <img
                   class="portfolio-img"
@@ -132,7 +151,13 @@
               <h3 class="portfolio-card-title">Ресторан Seafood</h3>
               <p class="portfolio-card-name">Додаток</p>
             </article>
-            <article class="portfolio-card">
+            <article
+              class="portfolio-card"
+              data-aos="flip-up"
+              data-aos-duration="650"
+              data-aos-delay="350"
+              data-aos-once="true"
+            >
               <div class="portfolio-card-photo">
                 <img
                   class="portfolio-img"
@@ -148,7 +173,13 @@
               <h3 class="portfolio-card-title">Проєкт Prime</h3>
               <p class="portfolio-card-name">Маркетинг</p>
             </article>
-            <article class="portfolio-card">
+            <article
+              class="portfolio-card"
+              data-aos="flip-up"
+              data-aos-duration="650"
+              data-aos-delay="450"
+              data-aos-once="true"
+            >
               <div class="portfolio-card-photo">
                 <img
                   class="portfolio-img"
@@ -164,7 +195,14 @@
               <h3 class="portfolio-card-title">Проєкт Boxes</h3>
               <p class="portfolio-card-name">Додаток</p>
             </article>
-            <article class="portfolio-card">
+            <article
+              class="portfolio-card"
+              data-aos="flip-up"
+              data-aos-duration="650"
+              data-aos-delay="550"
+              data-aos-once="true"
+            >
+              >
               <div class="portfolio-card-photo">
                 <img
                   class="portfolio-img"
@@ -180,7 +218,14 @@
               <h3 class="portfolio-card-title">Inspiration has no Borders</h3>
               <p class="portfolio-card-name">Веб-сайт</p>
             </article>
-            <article class="portfolio-card">
+            <article
+              class="portfolio-card"
+              data-aos="flip-up"
+              data-aos-duration="650"
+              data-aos-delay="50"
+              data-aos-once="true"
+            >
+              >
               <div class="portfolio-card-photo">
                 <img
                   class="portfolio-img"
@@ -196,7 +241,14 @@
               <h3 class="portfolio-card-title">Видання Limited Edition</h3>
               <p class="portfolio-card-name">Дизайн</p>
             </article>
-            <article class="portfolio-card">
+            <article
+              class="portfolio-card"
+              data-aos="flip-up"
+              data-aos-duration="650"
+              data-aos-delay="150"
+              data-aos-once="true"
+            >
+              >
               <div class="portfolio-card-photo">
                 <img
                   class="portfolio-img"
@@ -212,7 +264,14 @@
               <h3 class="portfolio-card-title">Проєкт LAB</h3>
               <p class="portfolio-card-name">Маркетинг</p>
             </article>
-            <article class="portfolio-card">
+            <article
+              class="portfolio-card"
+              data-aos="flip-up"
+              data-aos-duration="650"
+              data-aos-delay="250"
+              data-aos-once="true"
+            >
+              >
               <div class="portfolio-card-photo">
                 <img
                   class="portfolio-img"
@@ -313,5 +372,9 @@
         </form>
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
