@@ -741,6 +741,10 @@ img {
   transition: transform var(--animPrimery);
 }
 
+.hide {
+  display: none;
+}
+
 /* =================footer===================== */
 
 .footer {
