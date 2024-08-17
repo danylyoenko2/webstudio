@@ -1,0 +1,43 @@
+.permanent-clients {
+  padding-top: 126px;
+  padding-bottom: 94px;
+}
+
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.client-link {
+  padding: 16px 32px;
+  display: block;
+  border-radius: 4px;
+  transition: border var(--animPrimery);
+  border: 1px solid var(--colorClients);
+  border-radius: 4px;
+}
+
+.client-link:hover {
+  border: 1px solid var(--colorHover);
+}
+
+.client:hover .client-icon {
+  fill: var(--colorHover);
+}
+
+.client-icon {
+  width: 106px;
+  height: 60px;
+  fill: var(--colorClients);
+  transition: fill var(--animPrimery);
+}

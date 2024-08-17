@@ -1,0 +1,55 @@
+.btn-close {
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+.modal-close-icon {
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  transition: transform var(--animSlowly);
+}
+
+.modal-close-icon:hover {
+  fill: var(--colorHover);
+  transform: rotate(180deg);
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accept-btn-input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  width: 16px;
+  height: 15px;
+}
+
+.accept-btn-span {
+  color: var(--colorHover);
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.modal-submit {
+  color: var(--colorMain);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 187%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  padding: 10px 52px;
+  background-color: var(--colorHover);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  margin: 0 auto;
+  display: block;
+  transition: background-color var(--animPrimery);
+}
+
+.modal-submit:hover {
+  background-color: var(--colorBtnHover);
+}

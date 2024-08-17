@@ -1,0 +1,41 @@
+.footer-webnetwork-title {
+  font-weight: 700;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--colorMain);
+  margin-bottom: 20px;
+}
+
+.webnetworks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.webnetwork {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transition: background-color var(--animPrimery);
+}
+
+.webnetwork:hover {
+  background-color: var(--colorHover);
+}
+
+.webnetwork-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-webnetwork-icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--colorMain);
+}

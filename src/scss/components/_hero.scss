@@ -1,0 +1,52 @@
+.hero {
+  background-color: var(--colorBackgroung);
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(
+      to right,
+      var(--colorOverlay),
+      var(--colorOverlay)
+    ),
+    url(../img/bg/herobg.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+}
+
+.hero-title {
+  max-width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 136%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--colorPage);
+  animation: showLeft 1.5s ease 0s;
+}
+
+.hero-button {
+  color: var(--colorPage);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.87;
+  padding: 10px 32px;
+  background-color: var(--colorHover);
+  border-radius: 4px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  transition: background-color var(--animPrimery);
+  animation: showRight 1.5s ease 0.1s;
+}
+
+.hero-button:hover {
+  background-color: var(--colorBtnHover);
+}

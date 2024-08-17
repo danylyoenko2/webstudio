@@ -1,0 +1,29 @@
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 8px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.portfolio-list-button {
+  padding: 6px 25px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+  border: 1px solid #ffffff00;
+  border-radius: 4px;
+  background-color: var(--colorTeam);
+  transition: color var(--animPrimery);
+  transition: background-color var(--animPrimery);
+}
+
+.portfolio-list-button:hover {
+  padding: 6px 25px;
+  color: var(--colorMain);
+  background-color: var(--colorHover);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 1px 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 1px 0 rgba(0, 0, 0, 0.1);
+}

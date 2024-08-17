@@ -1,0 +1,80 @@
+.team {
+  padding-bottom: 94px;
+  background-color: var(--colorTeam);
+}
+
+.team-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+}
+
+.team-member {
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
+    0 1px 3px 0 rgba(0, 0, 0, 0.12);
+  flex-basis: calc((100% - 90px) / 4);
+  border-radius: 0 0 4px 4px;
+  background-color: var(--colorMain);
+}
+
+.team-photo {
+  margin-bottom: 30px;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+
+.team-name {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.team-education {
+  color: var(--colorOpacityContact);
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  padding-bottom: 16px;
+}
+
+.team-webnetworks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 30px;
+}
+
+.team-webnetwork {
+  border-radius: 100%;
+  width: 44px;
+  height: 44px;
+  transition: background-color var(--animPrimery);
+}
+
+.team-webnetwork:hover {
+  background-color: var(--colorHover);
+}
+
+.team-webnetwork-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+}
+
+.team-webnetwork-link:hover .webnetwork-icon {
+  fill: var(--colorMain);
+}
