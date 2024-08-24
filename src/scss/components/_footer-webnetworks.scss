@@ -1,4 +1,4 @@
-.footer-webnetwork-title {
+.footer__webnetwork__title {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -26,7 +26,7 @@
   background-color: var(--colorHover);
 }
 
-.webnetwork-link {
+.webnetwork__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -34,7 +34,7 @@
   justify-content: center;
 }
 
-.footer-webnetwork-icon {
+.footer__webnetwork__icon {
   width: 20px;
   height: 20px;
   fill: var(--colorMain);

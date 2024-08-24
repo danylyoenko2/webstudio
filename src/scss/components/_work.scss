@@ -2,7 +2,7 @@
   padding-bottom: 94px;
 }
 
-.work-title {
+.work__title {
   font-weight: 700;
   font-size: 36px;
   letter-spacing: 0.03em;
@@ -10,18 +10,18 @@
   margin-bottom: 50px;
 }
 
-.work-photos {
+.work__photos {
   display: flex;
   column-gap: 30px;
 }
 
-.work-photo {
+.work__photo {
   column-gap: 30px;
   flex-basis: calc((100% - 60px) / 3);
   position: relative;
 }
 
-.work-text {
+.work__text {
   color: var(--colorMain);
   font-weight: 700;
   font-size: 14px;

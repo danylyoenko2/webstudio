@@ -22,34 +22,34 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
-        <a href="#" class="header-link-logo"
-          ><img class="header-logo" src="../img/logo/WebStudio.svg" alt="лого"
+      <div class="container header__container">
+        <a href="#" class="header__logo"
+          ><img class="logo__photo" src="../img/logo/WebStudio.svg" alt="лого"
         /></a>
         <nav class="menu">
-          <ul class="menu-list">
-            <li class="menu-list-item">
-              <a class="menu-list-link" href="../../index.html">Студія</a>
+          <ul class="menu__list">
+            <li class="menu__list__item">
+              <a class="menu__list__link" href="../../index.html">Студія</a>
             </li>
-            <li class="menu-list-item">
-              <a class="menu-list-link link-active" href="#">Портфоліо</a>
+            <li class="menu__list__item">
+              <a class="menu__list__link link__active" href="#">Портфоліо</a>
             </li>
-            <li class="menu-list-item">
-              <a class="menu-list-link" href="#">Контакти</a>
+            <li class="menu__list__item">
+              <a class="menu__list__link" href="#">Контакти</a>
             </li>
           </ul>
-          <ul class="menu-contact">
-            <li class="menu-contact-list">
-              <a class="menu-contact-link" href="mailto:info@devstudio.com">
-                <svg class="menu-contact-icon">
+          <ul class="contact">
+            <li class="contact__list">
+              <a class="contact__link" href="mailto:info@devstudio.com">
+                <svg class="contact__icon contact__icon--email">
                   <use href="../img/icons/symbol-defs.svg#icon-e-mail"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
-            <li class="menu-contact-list">
-              <a class="menu-contact-link" href="tel:+380961111111">
-                <svg class="menu-contact-icon">
+            <li class="contact__list">
+              <a class="contact__link" href="tel:+380961111111">
+                <svg class="contact__icon contact__icon--phone">
                   <use
                     href="../img/icons/symbol-defs.svg#icon-smartphone"
                   ></use>
@@ -63,340 +63,340 @@
     </header>
     <main class="main">
       <section class="portfolio">
-        <div class="container filter-container">
-          <ul class="portfolio-list">
-            <li class="portfolio-list-item">
-              <button class="portfolio-list-button" data-f="all">Усі</button>
+        <div class="container portfolio__container">
+          <ul class="portfolio__list">
+            <li class="portfolio__list__item">
+              <button class="portfolio__list__button" data-f="all">Усі</button>
             </li>
-            <li class="portfolion-list-item">
-              <button class="portfolio-list-button" data-f="web">
+            <li class="portfolion__list__item">
+              <button class="portfolio__list__button" data-f="web">
                 Веб-сайти
               </button>
             </li>
-            <li class="portfolio-list-item">
-              <button class="portfolio-list-button" data-f="app">
+            <li class="portfolio__list__item">
+              <button class="portfolio__list__button" data-f="app">
                 Додатки
               </button>
             </li>
-            <li class="portfolio-list-item">
-              <button class="portfolio-list-button" data-f="design">
+            <li class="portfolio__list__item">
+              <button class="portfolio__list__button" data-f="design">
                 Дизайн
               </button>
             </li>
-            <li class="portfolio-list-item">
-              <button class="portfolio-list-button" data-f="marketing">
+            <li class="portfolio__list__item">
+              <button class="portfolio__list__button" data-f="marketing">
                 Маркетинг
               </button>
             </li>
           </ul>
-          <div class="portfolio-cards">
+          <div class="portfolio__cards">
             <!-- =====================================================1========================================================= -->
 
             <article
-              class="portfolio-card web"
+              class="portfolio__card web"
               data-aos="flip-up"
               data-aos-duration="650"
               data-aos-delay="50"
               data-aos-once="true"
             >
-              <div class="portfolio-card-photo">
+              <div class="portfolio__card__photo">
                 <img
-                  class="portfolio-img"
+                  class="card__img"
                   src="../img/portfolio/web-site.webp"
                   alt="Веб-сайт"
                 />
-                <p class="portfolio-card-back">
+                <p class="portfolio__card__back">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
               </div>
-              <h3 class="portfolio-card-title">Технокряк</h3>
-              <p class="portfolio-card-name">Веб-сайт</p>
+              <h3 class="portfolio__card__title">Технокряк</h3>
+              <p class="portfolio__card__name">Веб-сайт</p>
             </article>
 
             <!-- ======================================================2======================================================== -->
 
             <article
-              class="portfolio-card design"
+              class="portfolio__card design"
               data-aos="flip-up"
               data-aos-duration="650"
               data-aos-delay="150"
               data-aos-once="true"
             >
-              <div class="portfolio-card-photo">
+              <div class="portfolio__card__photo">
                 <img
-                  class="pportfolio-img"
+                  class="card__img"
                   src="../img/portfolio/design.webp"
                   alt="Дизайн"
                 />
-                <p class="portfolio-card-back">
+                <p class="portfolio__card__back">
                   Надихаючий дизайн, що втілює гармонію та розкіш. Сучасна
                   естетика зустрічається з елегантною класикою, створюючи
                   унікальні та стильні рішення для вашого простору.
                 </p>
               </div>
-              <h3 class="portfolio-card-title">
+              <h3 class="portfolio__card__title">
                 Постер New Orleane vs Golden Star
               </h3>
-              <p class="portfolio-card-name">Дизайн</p>
+              <p class="portfolio__card__name">Дизайн</p>
             </article>
 
             <!-- =====================================================3========================================================= -->
 
             <article
-              class="portfolio-card app"
+              class="portfolio__card app"
               data-aos="flip-up"
               data-aos-duration="650"
               data-aos-delay="250"
               data-aos-once="true"
             >
-              <div class="portfolio-card-photo">
+              <div class="portfolio__card__photo">
                 <img
-                  class="portfolio-img"
+                  class="card__img"
                   src="../img/portfolio/appseafood.webp"
                   alt="Додаток ресторан"
                 />
-                <p class="portfolio-card-back">
+                <p class="portfolio__card__back">
                   Ваш особистий гід у світі морських делікатесів. Легко знайдіть
                   найближчі ресторани з найсвіжішими морепродуктами,
                   переглядайте меню, бронюйте столи та отримуйте ексклюзивні
                   пропозиції – все в одному додатку!
                 </p>
               </div>
-              <h3 class="portfolio-card-title">Ресторан Seafood</h3>
-              <p class="portfolio-card-name">Додаток</p>
+              <h3 class="portfolio__card__title">Ресторан Seafood</h3>
+              <p class="portfolio__card__name">Додаток</p>
             </article>
 
             <!-- ====================================================4========================================================== -->
 
             <article
-              class="portfolio-card marketing"
+              class="portfolio__card marketing"
               data-aos="flip-up"
               data-aos-duration="650"
               data-aos-delay="350"
               data-aos-once="true"
             >
-              <div class="portfolio-card-photo">
+              <div class="portfolio__card__photo">
                 <img
-                  class="portfolio-img"
+                  class="card__img"
                   src="../img/portfolio/marketingheadphone.webp"
                   alt="Маркетинг навушники"
                 />
-                <p class="portfolio-card-back">
+                <p class="portfolio__card__back">
                   Інноваційні маркетингові рішення для зростання вашого бізнесу.
                   Ми поєднуємо креативність і аналітику, щоб створювати
                   ефективні стратегії, що залучають клієнтів і підвищують ваш
                   бренд на новий рівень.
                 </p>
               </div>
-              <h3 class="portfolio-card-title">Проєкт Prime</h3>
-              <p class="portfolio-card-name">Маркетинг</p>
+              <h3 class="portfolio__card__title">Проєкт Prime</h3>
+              <p class="portfolio__card__name">Маркетинг</p>
             </article>
 
             <!-- =====================================================5========================================================= -->
 
             <article
-              class="portfolio-card app"
+              class="portfolio__card app"
               data-aos="flip-up"
               data-aos-duration="650"
               data-aos-delay="450"
               data-aos-once="true"
             >
-              <div class="portfolio-card-photo">
+              <div class="portfolio__card__photo">
                 <img
-                  class="portfolio-img"
+                  class="card__img"
                   src="../img/portfolio/appboxes.webp"
                   alt="Додаток коробки"
                 />
-                <p class="portfolio-card-back">
+                <p class="portfolio__card__back">
                   Розумні рішення для організації вашого цифрового простору. Цей
                   додаток допоможе структурувати файли, завдання та нотатки в
                   зручні «коробки», роблячи вашу роботу ефективнішою та
                   впорядкованою.
                 </p>
               </div>
-              <h3 class="portfolio-card-title">Проєкт Boxes</h3>
-              <p class="portfolio-card-name">Додаток</p>
+              <h3 class="portfolio__card__title">Проєкт Boxes</h3>
+              <p class="portfolio__card__name">Додаток</p>
             </article>
 
             <!-- =====================================================6========================================================= -->
 
             <article
-              class="portfolio-card web"
+              class="portfolio__card web"
               data-aos="flip-up"
               data-aos-duration="650"
               data-aos-delay="550"
               data-aos-once="true"
             >
-              <div class="portfolio-card-photo">
+              <div class="portfolio__card__photo">
                 <img
-                  class="portfolio-img"
+                  class="card__img"
                   src="../img/portfolio/web-siteborders.webp"
                   alt="Веб-сайт стіни"
                 />
-                <p class="portfolio-card-back">
+                <p class="portfolio__card__back">
                   Платформа, яка об'єднує креативних людей з усього світу.
                   Діліться своїми ідеями, знаходьте натхнення та співпрацюйте з
                   іншими, щоб створювати проєкти, що виходять за межі уяви.
                 </p>
               </div>
-              <h3 class="portfolio-card-title">Inspiration has no Borders</h3>
-              <p class="portfolio-card-name">Веб-сайт</p>
+              <h3 class="portfolio__card__title">Inspiration has no Borders</h3>
+              <p class="portfolio__card__name">Веб-сайт</p>
             </article>
 
             <!-- ======================================================7======================================================== -->
 
             <article
-              class="portfolio-card design"
+              class="portfolio__card design"
               data-aos="flip-up"
               data-aos-duration="650"
               data-aos-delay="50"
               data-aos-once="true"
             >
-              <div class="portfolio-card-photo">
+              <div class="portfolio__card__photo">
                 <img
-                  class="portfolio-img"
+                  class="card__img"
                   src="../img/portfolio/designnewspaper.webp"
                   alt="Дизайн газети"
                 />
-                <p class="portfolio-card-back">
+                <p class="portfolio__card__back">
                   Ексклюзивне видання для справжніх цінителів дизайну. Відкрийте
                   для себе унікальні концепти, рідкісні інтерв'ю та свіжі
                   тренди, які формують майбутнє креативної індустрії
                 </p>
               </div>
-              <h3 class="portfolio-card-title">Видання Limited Edition</h3>
-              <p class="portfolio-card-name">Дизайн</p>
+              <h3 class="portfolio__card__title">Видання Limited Edition</h3>
+              <p class="portfolio__card__name">Дизайн</p>
             </article>
 
             <!-- ========================================================8====================================================== -->
 
             <article
-              class="portfolio-card marketing"
+              class="portfolio__card marketing"
               data-aos="flip-up"
               data-aos-duration="650"
               data-aos-delay="150"
               data-aos-once="true"
             >
-              <div class="portfolio-card-photo">
+              <div class="portfolio__card__photo">
                 <img
-                  class="portfolio-img"
+                  class="card__img"
                   src="../img/portfolio/marketingLAB.webp "
                   alt="Маркетинг ЛАБ"
                 />
-                <p class="portfolio-card-back">
+                <p class="portfolio__card__back">
                   Маркетинговий проєкт, де ідеї народжуються і тестуються. Ми
                   експериментуємо з нестандартними підходами та інструментами,
                   щоб знайти ефективні рішення для вашого бренду.
                 </p>
               </div>
-              <h3 class="portfolio-card-title">Проєкт LAB</h3>
-              <p class="portfolio-card-name">Маркетинг</p>
+              <h3 class="portfolio__card__title">Проєкт LAB</h3>
+              <p class="portfolio__card__name">Маркетинг</p>
             </article>
 
             <!-- ===================================================9=========================================================== -->
 
             <article
-              class="portfolio-card app"
+              class="portfolio__card app"
               data-aos="flip-up"
               data-aos-duration="650"
               data-aos-delay="250"
               data-aos-once="true"
             >
-              <div class="portfolio-card-photo">
+              <div class="portfolio__card__photo">
                 <img
-                  class="portfolio-img"
+                  class="card__img"
                   src="../img/portfolio/appbussines.webp"
                   alt="Додаток бізнес"
                 />
-                <p class="portfolio-card-back">
+                <p class="portfolio__card__back">
                   Ваш незамінний інструмент для розвитку бізнесу. Відстежуйте
                   прогрес, аналізуйте дані та отримуйте персоналізовані
                   рекомендації для сталого зростання вашої компанії.
                 </p>
               </div>
-              <h3 class="portfolio-card-title">Growing Business</h3>
-              <p class="portfolio-card-name">Додаток</p>
+              <h3 class="portfolio__card__title">Growing Business</h3>
+              <p class="portfolio__card__name">Додаток</p>
             </article>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-container">
-        <div class="footer-info">
-          <a class="footer-logo" href="#"
+      <div class="container footer__container">
+        <div class="footer__info">
+          <a class="footer__logo" href="#"
             ><img
-              class="logo-img"
+              class="logo__img"
               src="../img/logo/WebStudio_footer.svg"
               alt="лого"
           /></a>
-          <div class="footer-menu">
-            <ul class="footer-list">
-              <li class="footer-list-item">
-                <address class="footer-list-address">
+          <div class="footer__menu">
+            <ul class="footer__list">
+              <li class="footer__list__item">
+                <address class="footer__list__address">
                   м.Київ, пр-т Лесі Українки, 26
                 </address>
               </li>
-              <li class="footer-list-item">
-                <a class="footer-list-link" href="#">info@devstudio.com</a>
+              <li class="footer__list__item">
+                <a class="footer__list__link" href="#">info@devstudio.com</a>
               </li>
-              <li class="footer-list-item">
-                <a class="footer-list-link" href="#">+38 096 111 11 11</a>
+              <li class="footer__list__item">
+                <a class="footer__list__link" href="#">+38 096 111 11 11</a>
               </li>
             </ul>
           </div>
         </div>
-        <div class="footer-webnetworks">
-          <h2 class="footer-webnetwork-title">Приєднуйтесь</h2>
+        <div class="footer__webnetworks">
+          <h2 class="footer__webnetwork__title">Приєднуйтесь</h2>
           <ul class="webnetworks">
             <li class="webnetwork">
-              <a href="https://instagram.com/" class="webnetwork-link">
-                <svg class="footer-webnetwork-icon">
+              <a href="https://instagram.com/" class="webnetwork__link">
+                <svg class="footer__webnetwork__icon">
                   <use href="../img/icons/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="webnetwork">
-              <a href="https://twitter.com/" class="webnetwork-link">
-                <svg class="footer-webnetwork-icon">
+              <a href="https://twitter.com/" class="webnetwork__link">
+                <svg class="footer__webnetwork__icon">
                   <use href="../img/icons/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
             <li class="webnetwork">
-              <a href="https://facebook.com/" class="webnetwork-link">
-                <svg class="footer-webnetwork-icon">
+              <a href="https://facebook.com/" class="webnetwork__link">
+                <svg class="footer__webnetwork__icon">
                   <use href="../img/icons/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
             <li class="webnetwork">
-              <a href="https://www.linkedin.com/" class="webnetwork-link">
-                <svg class="footer-webnetwork-icon">
+              <a href="https://www.linkedin.com/" class="webnetwork__link">
+                <svg class="footer__webnetwork__icon">
                   <use href="../img/icons/symbol-defs.svg#icon-in"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <form action="" class="footer-form">
-          <h4 class="form-title">Підпишіться на розсилку</h4>
-          <div class="form-container">
-            <div class="footer-form-field">
-              <label for="email-footer" class="footer-form-label"></label>
+        <form action="send" class="footer__form">
+          <h4 class="form__title">Підпишіться на розсилку</h4>
+          <div class="form__container">
+            <div class="footer__form__field">
+              <label for="email-footer" class="footer__form__label"></label>
               <input
                 type="email"
                 id="email-footer"
                 required
                 placeholder="E-mail"
-                class="footer-form-input"
+                class="footer__form__input"
               />
             </div>
-            <button class="footer-form-btn">
+            <button class="footer__form__btn">
               Підписатися
-              <svg class="form-btn-icon">
+              <svg class="form__btn__icon">
                 <use href="../img/icons/symbol-defs.svg#icon-icon-send"></use>
               </svg>
             </button>

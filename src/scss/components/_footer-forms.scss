@@ -1,11 +1,11 @@
-.form-container {
+.form__container {
   display: flex;
   align-items: baseline;
   justify-content: center;
   gap: 12px;
 }
 
-.form-title {
+.form__title {
   color: var(--colorMain);
   font-weight: 700;
   font-size: 14px;
@@ -14,19 +14,19 @@
   margin-bottom: 20px;
 }
 
-.footer-form-field {
+.footer__form__field {
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
 
-.footer-form-input {
+.footer__form__input {
   padding: 16px 0px 15px 16px;
   width: 360px;
   background-color: rgba(0, 0, 0, 0);
 }
 
-.footer-form-btn {
+.footer__form__btn {
   color: var(--colorMain);
   font-weight: 700;
   font-size: 16px;
@@ -43,11 +43,11 @@
   transition: background-color var(--animPrimery);
 }
 
-.footer-form-btn:hover {
+.footer__form__btn:hover {
   background-color: var(--colorBtnHover);
 }
 
-.form-btn-icon {
+.form__btn__icon {
   width: 24px;
   height: 24px;
 }

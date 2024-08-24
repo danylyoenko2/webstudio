@@ -8,12 +8,12 @@
   transition: opacity var(--animPrimery);
 }
 
-.backdrop.is-hidden {
+.backdrop.is__hidden {
   opacity: 0;
   pointer-events: none;
 }
 
-.backdrop.is-hidden .modal {
+.backdrop.is__hidden .modal {
   transform: translate(-50%, -50%) scale(0);
   opacity: 0.5;
 }

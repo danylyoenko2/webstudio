@@ -1,27 +1,27 @@
-.modal-forms {
+.modal__forms {
   margin: 0 auto;
   max-width: 450px;
 }
 
-.form-wrapper {
+.form__wrapper {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 10px;
 }
 
-.form-wrapper:hover,
-.footer-form-field:hover {
+.form__wrapper:hover,
+.footer__form__field:hover {
   border: 1px solid var(--colorHover);
   fill: var(--colorHover);
 }
 
-.form-wrapper:focus-within,
-.footer-form-field:focus-within {
+.form__wrapper:focus-within,
+.footer__form__field:focus-within {
   border: 1px solid var(--colorHover);
   fill: var(--colorHover);
 }
 
-.form-label {
+.form__label {
   display: flex;
   color: var(--colorAdvantages);
   margin-bottom: 4px;
@@ -31,12 +31,12 @@
   align-items: flex-start;
 }
 
-.form-wrapper {
+.form__wrapper {
   display: flex;
   align-items: center;
 }
 
-.form-input {
+.form__input {
   width: 100%;
   padding-top: 11px;
   padding-bottom: 11px;
@@ -48,14 +48,14 @@
   margin-bottom: 20px;
 }
 
-.modal-form-icon {
+.modal__form__icon {
   width: 18px;
   height: 18px;
   margin-left: 12px;
   margin-right: 12px;
 }
 
-.form-comment {
+.form__comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 448px;
@@ -65,13 +65,13 @@
   margin-bottom: 20px;
 }
 
-.form-comment:hover,
-.form-comment:focus {
+.form__comment:hover,
+.form__comment:focus {
   outline: 1px solid var(--colorHover);
   fill: var(--colorHover);
 }
 
-.checkbox-field {
+.checkbox__field {
   display: flex;
   align-items: center;
   justify-content: center;

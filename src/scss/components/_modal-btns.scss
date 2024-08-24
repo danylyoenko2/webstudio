@@ -1,24 +1,24 @@
-.btn-close {
+.btn__close {
   position: absolute;
   top: 6px;
   right: 0;
 }
 
-.modal-close-icon {
+.modal__close__icon {
   width: 30px;
   height: 30px;
   padding: 6px;
   transition: transform var(--animSlowly);
 }
 
-.modal-close-icon:hover {
+.modal__close__icon:hover {
   fill: var(--colorHover);
   transform: rotate(180deg);
   border-radius: 100%;
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.accept-btn-input {
+.accept__btn__input {
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
@@ -28,13 +28,13 @@
   height: 15px;
 }
 
-.accept-btn-span {
+.accept__btn__span {
   color: var(--colorHover);
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
 
-.modal-submit {
+.modal__submit {
   color: var(--colorMain);
   font-weight: 700;
   font-size: 16px;
@@ -50,6 +50,6 @@
   transition: background-color var(--animPrimery);
 }
 
-.modal-submit:hover {
+.modal__submit:hover {
   background-color: var(--colorBtnHover);
 }

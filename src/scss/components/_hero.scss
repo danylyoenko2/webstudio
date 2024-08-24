@@ -14,7 +14,7 @@
   background-repeat: no-repeat;
 }
 
-.hero-container {
+.hero__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -22,7 +22,7 @@
   row-gap: 30px;
 }
 
-.hero-title {
+.hero__title {
   max-width: 696px;
   font-weight: 900;
   font-size: 44px;
@@ -34,7 +34,7 @@
   animation: showLeft 1.5s ease 0s;
 }
 
-.hero-button {
+.hero__button {
   color: var(--colorPage);
   font-size: 16px;
   font-weight: 700;
@@ -47,6 +47,6 @@
   animation: showRight 1.5s ease 0.1s;
 }
 
-.hero-button:hover {
+.hero__button:hover {
   background-color: var(--colorBtnHover);
 }
