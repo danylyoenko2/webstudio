@@ -22,7 +22,7 @@
 }
 
 .work__text {
-  color: var(--colorMain);
+  color: $colorMain;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -33,5 +33,5 @@
   bottom: 0;
   padding-top: 27px;
   padding-bottom: 27px;
-  background-color: var(--colorWork);
+  background-color: $colorWork;
 }

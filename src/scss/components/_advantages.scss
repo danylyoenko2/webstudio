@@ -7,7 +7,7 @@
   content: "";
   display: block;
   height: 120px;
-  background-color: var(--colorTeam);
+  background-color: $colorTeam;
   background-image: url(../img/icons/antenna.svg);
   background-position: center;
   background-repeat: no-repeat;
@@ -47,7 +47,7 @@
 }
 
 .advantages__list__text {
-  color: var(--colorAdvantages);
+  color: var $colorAdvantages;
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;

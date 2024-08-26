@@ -1,6 +1,6 @@
 .team {
   padding-bottom: 94px;
-  background-color: var(--colorTeam);
+  background-color: $colorTeam;
 }
 
 .team__cards {
@@ -15,7 +15,7 @@
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
   flex-basis: calc((100% - 90px) / 4);
   border-radius: 0 0 4px 4px;
-  background-color: var(--colorMain);
+  background-color: $colorMain;
 }
 
 .team__photo {
@@ -40,7 +40,7 @@
 }
 
 .team__education {
-  color: var(--colorOpacityContact);
+  color: $colorOpacityContact;
   font-weight: 400;
   font-size: 16px;
   letter-spacing: 0.03em;
@@ -60,11 +60,11 @@
   border-radius: 100%;
   width: 44px;
   height: 44px;
-  transition: background-color var(--animPrimery);
+  transition: background-color $animPrimery;
 }
 
 .team__webnetwork:hover {
-  background-color: var(--colorHover);
+  background-color: $colorHover;
 }
 
 .team__webnetwork__link {
@@ -76,5 +76,5 @@
 }
 
 .team__webnetwork__link:hover .webnetwork__icon {
-  fill: var(--colorMain);
+  fill: $colorMain;
 }

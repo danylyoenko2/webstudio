@@ -19,11 +19,11 @@
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  transition: background-color var(--animPrimery);
+  transition: background-color $animPrimery;
 }
 
 .webnetwork:hover {
-  background-color: var(--colorHover);
+  background-color: $colorHover;
 }
 
 .webnetwork__link {
@@ -37,5 +37,5 @@
 .footer__webnetwork__icon {
   width: 20px;
   height: 20px;
-  fill: var(--colorMain);
+  fill: $colorMain;
 }

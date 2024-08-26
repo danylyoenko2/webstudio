@@ -9,7 +9,7 @@
   border: 1px solid #eee;
   flex-basis: calc((100% - 60px) / 3);
   padding-bottom: 20px;
-  transition: transform var(--animPrimery);
+  transition: transform $animPrimery;
 }
 
 .portfolio__card:hover {
@@ -29,7 +29,7 @@
 }
 
 .portfolio__card__title {
-  color: var(--colorDefault);
+  color: $colorDefault;
   font-size: 18px;
   font-weight: 700;
   line-height: 2;
@@ -39,7 +39,7 @@
 }
 
 .portfolio__card__name {
-  color: var(--colorOpacityContact);
+  color: $colorOpacityContact;
   font-size: 16px;
   font-weight: 400;
   line-height: 1.87;
@@ -50,7 +50,7 @@
 
 .portfolio__card__back {
   position: absolute;
-  color: var(--colorMain);
+  color: $colorMain;
   background-color: rgba(33, 150, 243, 0.9);
   font-weight: 400;
   font-size: 18px;
@@ -59,7 +59,7 @@
   padding: 63px 24px;
   top: 0;
   transform: translateY(100%);
-  transition: transform var(--animPrimery);
+  transition: transform $animPrimery;
 }
 
 .hide {

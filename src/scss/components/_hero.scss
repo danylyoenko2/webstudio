@@ -1,13 +1,9 @@
 .hero {
-  background-color: var(--colorBackgroung);
+  background-color: $colorBackgroung;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(
-      to right,
-      var(--colorOverlay),
-      var(--colorOverlay)
-    ),
+  background-image: linear-gradient(to right, $colorOverlay, $colorOverlay),
     url(../img/bg/herobg.webp);
   background-size: cover;
   background-position: center;
@@ -30,23 +26,23 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   text-align: center;
-  color: var(--colorPage);
+  color: $colorPage;
   animation: showLeft 1.5s ease 0s;
 }
 
 .hero__button {
-  color: var(--colorPage);
+  color: $colorPage;
   font-size: 16px;
   font-weight: 700;
   line-height: 1.87;
   padding: 10px 32px;
-  background-color: var(--colorHover);
+  background-color: $colorHover;
   border-radius: 4px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  transition: background-color var(--animPrimery);
+  transition: background-color $animPrimery;
   animation: showRight 1.5s ease 0.1s;
 }
 
 .hero__button:hover {
-  background-color: var(--colorBtnHover);
+  background-color: $colorBtnHover;
 }
