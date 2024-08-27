@@ -22,22 +22,22 @@
   padding: 16px 32px;
   display: block;
   border-radius: 4px;
-  transition: border var $animPrimery;
-  border: 1px solid var $colorClients;
+  transition: border $animPrimery;
+  border: 1px solid $colorClients;
   border-radius: 4px;
 }
 
 .client__link:hover {
-  border: 1px solid var $colorHover;
+  border: 1px solid $colorHover;
 }
 
 .client:hover .client__icon {
-  fill: var $colorHover;
+  fill: $colorHover;
 }
 
 .client__icon {
   width: 106px;
   height: 60px;
-  fill: var $colorClients;
-  transition: fill var $animPrimery;
+  fill: $colorClients;
+  transition: fill $animPrimery;
 }

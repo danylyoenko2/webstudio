@@ -6,7 +6,7 @@
 }
 
 .form__title {
-  color: var(--colorMain);
+  color: $colorMain;
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -14,20 +14,21 @@
   margin-bottom: 20px;
 }
 
-.footer__form__field {
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-
 .footer__form__input {
   padding: 16px 0px 15px 16px;
   width: 360px;
   background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+
+  &:focus {
+    border: 1px solid $colorHover;
+  }
 }
 
 .footer__form__btn {
-  color: var(--colorMain);
+  color: $colorMain;
   font-weight: 700;
   font-size: 16px;
   line-height: 187%;
@@ -40,7 +41,7 @@
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: background-color var $animPrimery;
+  transition: background-color $animPrimery;
 }
 
 .footer__form__btn:hover {
