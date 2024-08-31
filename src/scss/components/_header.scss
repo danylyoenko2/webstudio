@@ -28,12 +28,12 @@
   position: relative;
 }
 
-.menu__list__item {
+.menu__item {
   transition: color $animPrimery;
   position: relative;
 }
 
-.menu__list__link::after {
+.menu__link::after {
   content: "";
   position: absolute;
   border-radius: 2px;
@@ -46,7 +46,7 @@
   transition: transform $animPrimery;
 }
 
-.menu__list__link:hover::after,
+.menu__link:hover::after,
 .link__active::after {
   transform: scaleX(1);
 }
@@ -85,7 +85,7 @@
   transition: color $animPrimery;
 }
 
-.menu__list__item:hover,
+.menu__item:hover,
 .link__active {
   color: $colorHover;
 }

@@ -23,7 +23,7 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <a href="#" class="header__logo"
+        <a href="#" class="logo"
           ><img
             class="logo__photo"
             src="./src/img/logo/WebStudio.svg"
@@ -31,16 +31,16 @@
         /></a>
         <nav class="menu">
           <ul class="menu__list">
-            <li class="menu__list__item">
-              <a class="menu__list__link link__active" href="#">Студія</a>
+            <li class="menu__item">
+              <a class="menu__link link__active" href="#">Студія</a>
             </li>
-            <li class="menu__list__item">
-              <a class="menu__list__link" href="./src/pages/portfolio.html"
+            <li class="menu__item">
+              <a class="menu__link" href="./src/pages/portfolio.html"
                 >Портфоліо</a
               >
             </li>
-            <li class="menu__list__item">
-              <a class="menu__list__link" href="#">Контакти</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакти</a>
             </li>
           </ul>
           <ul class="contact">
@@ -81,17 +81,17 @@
               <h2 class="modal__title">
                 Залиште свої дані, ми вам передзвонимо
               </h2>
-              <form action="form" class="modal__forms">
-                <div class="modal__form">
-                  <label class="form__label" for="name">Ім'я</label>
-                  <div class="form__wrapper">
-                    <svg class="form__icon">
+              <form action="form" class="contact-form">
+                <div class="contact-form__field">
+                  <label class="contact-form__label" for="name">Ім'я</label>
+                  <div class="contact-form__wrapper">
+                    <svg class="contact-form__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-person"
                       ></use>
                     </svg>
                     <input
-                      class="form__input"
+                      class="contact-form__input"
                       type="text"
                       name="name"
                       id="name"
@@ -100,16 +100,16 @@
                     />
                   </div>
                 </div>
-                <div class="modal__form">
-                  <label class="form__label" for="tel">Телефон</label>
-                  <div class="form__wrapper">
-                    <svg class="form__icon">
+                <div class="contact-form__field">
+                  <label class="contact-form__label" for="tel">Телефон</label>
+                  <div class="contact-form__wrapper">
+                    <svg class="contact-form__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-phone"
                       ></use>
                     </svg>
                     <input
-                      class="form__input"
+                      class="contact-form__input"
                       type="tel"
                       name="tel"
                       id="tel"
@@ -117,16 +117,16 @@
                     />
                   </div>
                 </div>
-                <div class="modal__form">
-                  <label class="form__label" for="email">Пошта</label>
-                  <div class="form__wrapper">
-                    <svg class="form__icon">
+                <div class="contact-form__field">
+                  <label class="contact-form__label" for="email">Пошта</label>
+                  <div class="contact-form__wrapper">
+                    <svg class="contact-form__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-e-mail-black"
                       ></use>
                     </svg>
                     <input
-                      class="form__input"
+                      class="contact-form__input"
                       type="email"
                       name="email"
                       id="email"
@@ -135,30 +135,32 @@
                     />
                   </div>
                 </div>
-                <div class="modal__form modal__comment">
-                  <label class="form__label form__label--comment" for="comment"
+                <div class="contact-form__field">
+                  <label
+                    class="contact-form__label contact-form__label--comment"
+                    for="comment"
                     >Коментар</label
                   >
 
                   <textarea
                     name="comment"
                     id="comment"
-                    class="form__comment"
+                    class="contact-form__comment"
                     placeholder="Введіть текст"
                   ></textarea>
                 </div>
-                <div class="checkbox__field">
-                  <label for="checkbox" class="accept__btn"> </label>
+                <div class="contact-checkbox__field">
+                  <label for="checkbox" class="contact-accept__btn"> </label>
                   <input
                     type="checkbox"
                     name="checkbox"
                     id="checkbox"
-                    class="btn__input"
+                    class="contact-btn__input"
                   />
 
                   Погоджуюся з розсилкою та приймаю
-                  <a href="#" class="accept__btn__link"
-                    ><span class="accept__btn__span">Умови договору</span></a
+                  <a href="#" class="contact-accept__link"
+                    ><span class="accept__btn--span">Умови договору</span></a
                   >
                 </div>
 
@@ -206,76 +208,83 @@
           <h2 class="work__title" data-aos="fade-up" data-aos-duration="600">
             Чим ми займаємося
           </h2>
-          <div class="work__photos">
+          <div class="work-list">
             <div
-              class="work__photo"
+              class="work-list__item"
               data-aos="fade-right"
               data-aos-duration="600"
             >
               <img
-                class="work__img"
+                class="work-list__img"
                 src="./src/img/face/example/workspace.webp"
                 alt="Робоче місце"
               />
-              <p class="work__text">декстопні додатки</p>
+              <p class="work-list__subtext">декстопні додатки</p>
             </div>
-            <div class="work__photo" data-aos="zoom-in" data-aos-duration="600">
+            <div
+              class="work-list__item"
+              data-aos="zoom-in"
+              data-aos-duration="600"
+            >
               <img
-                class="work__img"
+                class="work-list__img"
                 src="./src/img/face/example/mobile.webp"
                 alt="Телефон"
               />
-              <p class="work__text">мобільні додатки</p>
+              <p class="work-list__subtext">мобільні додатки</p>
             </div>
             <div
-              class="work__photo"
+              class="work-list__item"
               data-aos="fade-left"
               data-aos-duration="600"
             >
               <img
-                class="work__img"
+                class="work-list__img"
                 src="./src/img/face/example/tablet.webp"
                 alt="Планшет"
               />
-              <p class="work__text">дизайнерські рішення</p>
+              <p class="work-list__subtext">дизайнерські рішення</p>
             </div>
           </div>
         </div>
       </section>
       <section class="team">
-        <div class="container">
+        <div class="container team__container">
           <h2 class="team__title" data-aos="fade-up" data-aos-duration="600">
             Наша команда
           </h2>
-          <div class="team__cards">
+          <div class="team-cards">
             <!-- ====================================1============================ -->
 
-            <article class="team__member" data-aos="fade-right">
-              <div class="team__member__photo">
+            <article class="team__card team-member" data-aos="fade-right">
+              <div class="team-member__photo">
                 <img
-                  class="team__photo"
+                  class="team-member__img"
                   src="./src/img/face/team/igor.webp"
                   alt="Ігор Дем'яненко"
                 />
               </div>
-              <p class="team__name">Ігор Дем'яненко</p>
-              <p class="team__education">Product Designer</p>
-              <ul class="team__webnetworks">
-                <li class="team__webnetwork">
+              <p class="team-member__name">Ігор Дем'яненко</p>
+              <p class="team-member__education">Product Designer</p>
+              <ul class="team-webnetworks webnetworks">
+                <li class="team-webnetwork">
                   <a
                     href="https://www.instagram.com/"
-                    class="team__webnetwork__link"
+                    class="team-footer-webnetwork__link"
                   >
-                    <svg class="webnetwork__icon">
+                    <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-instagram"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__webnetwork">
-                  <a href="https://twitter.com/" class="team__webnetwork__link">
-                    <svg class="webnetwork__icon">
+                <li class="team-webnetwork">
+                  <a
+                    href="https://twitter.com/"
+                    class="team-footer-webnetwork__link"
+                  >
+                    <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-twitter"
                         class="icon__photo"
@@ -283,24 +292,24 @@
                     </svg>
                   </a>
                 </li>
-                <li class="team__webnetwork">
+                <li class="team-webnetwork">
                   <a
                     href="https://facebook.com/"
-                    class="team__webnetwork__link"
+                    class="team-footer-webnetwork__link"
                   >
-                    <svg class="webnetwork__icon">
+                    <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-facebook"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__webnetwork">
+                <li class="team-webnetwork">
                   <a
                     href="https://www.linkedin.com/"
-                    class="team__webnetwork__link"
+                    class="team-footer-webnetwork__link"
                   >
-                    <svg class="webnetwork__icon">
+                    <svg class="webnetwork__icon team-webnetwork__icon">
                       <use href="./src/img/icons/symbol-defs.svg#icon-in"></use>
                     </svg>
                   </a>
@@ -310,56 +319,59 @@
 
             <!-- ====================================2============================ -->
 
-            <article class="team__member" data-aos="fade-up">
-              <div class="team__member__photo">
+            <article class="team__card team-member" data-aos="fade-up">
+              <div class="team-member__photo">
                 <img
-                  class="team__photo"
+                  class="team-member__photo"
                   src="./src/img/face/team/olga.webp"
                   alt="Ольга Рєпіна"
                 />
               </div>
-              <p class="team__name">Ольга Рєпіна</p>
-              <p class="team__education">Frontend Developer</p>
-              <ul class="team__webnetworks">
-                <li class="team__webnetwork">
+              <p class="team-member__name">Ольга Рєпіна</p>
+              <p class="team-member__education">Frontend Developer</p>
+              <ul class="team-webnetworks">
+                <li class="team-webnetwork">
                   <a
                     href="https://www.instagram.com/"
-                    class="team__webnetwork__link"
+                    class="team-footer-webnetwork__link"
                   >
-                    <svg class="webnetwork__icon">
+                    <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-instagram"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__webnetwork">
-                  <a href="https://twitter.com/" class="team__webnetwork__link">
-                    <svg class="webnetwork__icon">
+                <li class="team-webnetwork">
+                  <a
+                    href="https://twitter.com/"
+                    class="team-footer-webnetwork__link"
+                  >
+                    <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-twitter"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__webnetwork">
+                <li class="team-webnetwork">
                   <a
                     href="https://facebook.com/"
-                    class="team__webnetwork__link"
+                    class="team-footer-webnetwork__link"
                   >
-                    <svg class="webnetwork__icon">
+                    <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-facebook"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__webnetwork">
+                <li class="team-webnetwork">
                   <a
                     href="https://www.linkedin.com/"
-                    class="team__webnetwork__link"
+                    class="team-footer-webnetwork__link"
                   >
-                    <svg class="webnetwork__icon">
+                    <svg class="webnetwork__icon team-webnetwork__icon">
                       <use href="./src/img/icons/symbol-defs.svg#icon-in"></use>
                     </svg>
                   </a>
@@ -369,56 +381,59 @@
 
             <!-- ====================================3============================ -->
 
-            <article class="team__member" data-aos="fade-up">
-              <div class="team__member__photo">
+            <article class="team__card team-member" data-aos="fade-up">
+              <div class="team-member__photo">
                 <img
-                  class="team__photo"
+                  class="team-member__photo"
                   src="./src/img/face/team/mikola.webp"
                   alt="Микола Тарасов"
                 />
               </div>
-              <p class="team__name">Микола Тарасов</p>
-              <p class="team__education">Marketing</p>
-              <ul class="team__webnetworks">
-                <li class="team__webnetwork">
+              <p class="team-member__name">Микола Тарасов</p>
+              <p class="team-member__education">Marketing</p>
+              <ul class="team-webnetworks">
+                <li class="team-webnetwork">
                   <a
                     href="https://www.instagram.com/"
-                    class="team__webnetwork__link"
+                    class="team-footer-webnetwork__link"
                   >
-                    <svg class="webnetwork__icon">
+                    <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-instagram"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__webnetwork">
-                  <a href="https://twitter.com/" class="team__webnetwork__link">
-                    <svg class="webnetwork__icon">
+                <li class="team-webnetwork">
+                  <a
+                    href="https://twitter.com/"
+                    class="team-footer-webnetwork__link"
+                  >
+                    <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-twitter"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__webnetwork">
+                <li class="team-webnetwork">
                   <a
                     href="https://facebook.com/"
-                    class="team__webnetwork__link"
+                    class="team-footer-webnetwork__link"
                   >
-                    <svg class="webnetwork__icon">
+                    <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-facebook"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__webnetwork">
+                <li class="team-webnetwork">
                   <a
                     href="https://www.linkedin.com/"
-                    class="team__webnetwork__link"
+                    class="team-footer-webnetwork__link"
                   >
-                    <svg class="webnetwork__icon">
+                    <svg class="webnetwork__icon team-webnetwork__icon">
                       <use href="./src/img/icons/symbol-defs.svg#icon-in"></use>
                     </svg>
                   </a>
@@ -427,56 +442,59 @@
             </article>
             <!-- ====================================4============================ -->
 
-            <article class="team__member" data-aos="fade-left">
-              <div class="team__member__photo">
+            <article class="team__card team-member" data-aos="fade-left">
+              <div class="team-member__photo">
                 <img
-                  class="team__photo"
+                  class="team-member__photo"
                   src="./src/img/face/team/mikhailo.webp"
                   alt="Михайло Єрмаков"
                 />
               </div>
-              <p class="team__name">Михайло Єрмаков</p>
-              <p class="team__education">UI Designer</p>
-              <ul class="team__webnetworks">
-                <li class="team__webnetwork">
+              <p class="team-member__name">Михайло Єрмаков</p>
+              <p class="team-member__education">UI Designer</p>
+              <ul class="team-webnetworks">
+                <li class="team-webnetwork">
                   <a
                     href="https://www.instagram.com/"
-                    class="team__webnetwork__link"
+                    class="team-footer-webnetwork__link"
                   >
-                    <svg class="webnetwork__icon">
+                    <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-instagram"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__webnetwork">
-                  <a href="https://twitter.com/" class="team__webnetwork__link">
-                    <svg class="webnetwork__icon">
+                <li class="team-webnetwork">
+                  <a
+                    href="https://twitter.com/"
+                    class="team-footer-webnetwork__link"
+                  >
+                    <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-twitter"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__webnetwork">
+                <li class="team-webnetwork">
                   <a
                     href="https://facebook.com/"
-                    class="team__webnetwork__link"
+                    class="team-footer-webnetwork__link"
                   >
-                    <svg class="webnetwork__icon">
+                    <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-facebook"
                       ></use>
                     </svg>
                   </a>
                 </li>
-                <li class="team__webnetwork">
+                <li class="team-webnetwork">
                   <a
                     href="https://www.linkedin.com/"
-                    class="team__webnetwork__link"
+                    class="team-footer-webnetwork__link"
                   >
-                    <svg class="webnetwork__icon">
+                    <svg class="webnetwork__icon team-webnetwork__icon">
                       <use href="./src/img/icons/symbol-defs.svg#icon-in"></use>
                     </svg>
                   </a>
@@ -489,7 +507,7 @@
       <section class="clients">
         <div class="container clients__container">
           <h2 class="clients__title" data-aos="fade-up">Постійні клієнти</h2>
-          <ul class="clients__list">
+          <ul class="clients-list">
             <li
               class="client__item"
               data-aos="fade-right"
@@ -574,84 +592,85 @@
     </main>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="footer__info">
-          <a class="footer__logo" href="#"
+        <div class="footer-info">
+          <a class="footer__logo logo" href="#"
             ><img
               class="logo__img"
               src="./src/img/logo/WebStudio_footer.svg"
               alt="лого"
           /></a>
-          <div class="footer__menu">
-            <ul class="footer__list">
-              <li class="footer__list__item">
-                <address class="footer__list__address">
-                  м.Київ, пр-т Лесі Українки, 26
-                </address>
-              </li>
-              <li class="footer__list__item">
-                <a class="footer__list__link" href="#">info@devstudio.com</a>
-              </li>
-              <li class="footer__list__item">
-                <a class="footer__list__link" href="#">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <address class="footer-list__address">
+                м.Київ, пр-т Лесі Українки, 26
+              </address>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="#">info@devstudio.com</a>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="#">+38 096 111 11 11</a>
+            </li>
+          </ul>
         </div>
-        <div class="footer__webnetworks">
-          <h2 class="webnetworks__title">Приєднуйтесь</h2>
-          <ul class="webnetworks">
-            <li class="webnetwork">
-              <a href="https://instagram.com/" class="webnetwork__link">
-                <svg class="footer__webnetwork__icon">
+        <div class="footer-webnetworks webnetworks">
+          <h2 class="footer-webnetworks__title">Приєднуйтесь</h2>
+          <ul class="footer-webnetworks__list webnetworks">
+            <li class="footer-webnetwork__item">
+              <a href="https://instagram.com/" class="footer-webnetwork__link">
+                <svg class="footer-webnetwork__icon">
                   <use
                     href="./src/img/icons/symbol-defs.svg#icon-instagram"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="webnetwork">
-              <a href="https://twitter.com/" class="webnetwork__link">
-                <svg class="footer__webnetwork__icon">
+            <li class="footer-webnetwork__item">
+              <a href="https://twitter.com/" class="footer-webnetwork__link">
+                <svg class="footer-webnetwork__icon">
                   <use
                     href="./src/img/icons/symbol-defs.svg#icon-twitter"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="webnetwork">
-              <a href="https://facebook.com/" class="webnetwork__link">
-                <svg class="footer__webnetwork__icon">
+            <li class="footer-webnetwork__item">
+              <a href="https://facebook.com/" class="footer-webnetwork__link">
+                <svg class="footer-webnetwork__icon">
                   <use
                     href="./src/img/icons/symbol-defs.svg#icon-facebook"
                   ></use>
                 </svg>
               </a>
             </li>
-            <li class="webnetwork">
-              <a href="https://www.linkedin.com/" class="webnetwork__link">
-                <svg class="footer__webnetwork__icon">
+            <li class="footer-webnetwork__item">
+              <a
+                href="https://www.linkedin.com/"
+                class="footer-webnetwork__link"
+              >
+                <svg class="footer-webnetwork__icon">
                   <use href="./src/img/icons/symbol-defs.svg#icon-in"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <form action="send" class="footer__form">
-          <h4 class="form__title">Підпишіться на розсилку</h4>
-          <div class="form__container">
-            <div class="footer__form">
-              <label for="email-footer" class="footer__form__label"></label>
+        <form action="send" class="footer__form subscribe-form">
+          <h4 class="subscribe-form__title">Підпишіться на розсилку</h4>
+          <div class="subscribe-form__wrapper">
+            <div class="subscribe-form__field">
+              <label for="email-footer" class="subscribe-form__label"></label>
               <input
                 type="email"
                 id="email-footer"
                 required
                 placeholder="E-mail"
-                class="footer__form__input"
+                class="subscribe-form__input"
               />
             </div>
-            <button class="footer__form__btn">
+            <button class="subscribe-form__btn">
               Підписатися
-              <svg class="form__icon">
+              <svg class="subscribe-form__icon">
                 <use
                   href="./src/img/icons/symbol-defs.svg#icon-icon-send"
                 ></use>

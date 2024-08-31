@@ -1,27 +1,22 @@
-.modal__forms {
-  margin: 0 auto;
-  max-width: 450px;
-}
-
-.form__wrapper {
+.contact-form__wrapper {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   margin-bottom: 10px;
 }
 
-.form__wrapper:hover,
+.contact-form__wrapper:hover,
 .footer__form__field:hover {
   border: 1px solid $colorHover;
   fill: $colorHover;
 }
 
-.form__wrapper:focus-within,
+.contact-form__wrapper:focus-within,
 .footer__form__field:focus-within {
   border: 1px solid $colorHover;
   fill: $colorHover;
 }
 
-.form__label {
+.contact-form__label {
   display: flex;
   color: $colorAdvantages;
   margin-bottom: 4px;
@@ -31,12 +26,12 @@
   align-items: flex-start;
 }
 
-.form__wrapper {
+.contact-form__wrapper {
   display: flex;
   align-items: center;
 }
 
-.form__input {
+.contact-form__input {
   width: 100%;
   padding-top: 11px;
   padding-bottom: 11px;
@@ -48,14 +43,14 @@
   margin-bottom: 20px;
 }
 
-.form__icon {
+.contact-form__icon {
   width: 18px;
   height: 18px;
   margin-left: 12px;
   margin-right: 12px;
 }
 
-.form__comment {
+.contact-form__comment {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   width: 448px;
@@ -65,13 +60,13 @@
   margin-bottom: 20px;
 }
 
-.form__comment:hover,
-.form__comment:focus {
+.contact-form__comment:hover,
+.contact-form__comment:focus {
   outline: 1px solid $colorHover;
   fill: $colorHover;
 }
 
-.checkbox__field {
+.contact-checkbox__field {
   display: flex;
   align-items: center;
   justify-content: center;

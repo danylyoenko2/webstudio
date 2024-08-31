@@ -1,4 +1,4 @@
-.portfolio__list {
+.portfolio-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,7 +7,7 @@
   margin-bottom: 50px;
 }
 
-.portfolio__list__button {
+.portfolio-list__button {
   padding: 6px 25px;
   font-weight: 500;
   font-size: 16px;
@@ -20,7 +20,7 @@
   transition: background-color $animPrimery;
 }
 
-.portfolio__list__button:hover {
+.portfolio-list__button:hover {
   padding: 6px 25px;
   color: $colorMain;
   background-color: $colorHover;

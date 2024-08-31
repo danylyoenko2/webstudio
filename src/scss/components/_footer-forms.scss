@@ -1,11 +1,11 @@
-.form__container {
+.subscribe-form__wrapper {
   display: flex;
   align-items: baseline;
   justify-content: center;
   gap: 12px;
 }
 
-.form__title {
+.subscribe-form__title {
   color: $colorMain;
   font-weight: 700;
   font-size: 14px;
@@ -14,7 +14,7 @@
   margin-bottom: 20px;
 }
 
-.footer__form__input {
+.subscribe-form__input {
   padding: 16px 0px 15px 16px;
   width: 360px;
   background-color: rgba(0, 0, 0, 0);
@@ -27,7 +27,7 @@
   }
 }
 
-.footer__form__btn {
+.subscribe-form__btn {
   color: $colorMain;
   font-weight: 700;
   font-size: 16px;
@@ -44,11 +44,11 @@
   transition: background-color $animPrimery;
 }
 
-.footer__form__btn:hover {
+.subscribe-form__btn:hover {
   background-color: $colorBtnHover;
 }
 
-.form__btn__icon {
+.subscribe-form__icon {
   width: 24px;
   height: 24px;
 }

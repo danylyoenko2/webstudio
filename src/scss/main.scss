@@ -1,3 +1,5 @@
+@import "./utils/keyframes";
+
 @import "./base/variables";
 @import "./base/typographics";
 @import "./base/base";
@@ -5,7 +7,6 @@
 
 @import "./layout/grids";
 
-@import "./components/keyframes";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/backdrop";

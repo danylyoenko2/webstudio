@@ -10,18 +10,18 @@
   margin-bottom: 50px;
 }
 
-.work__photos {
+.work-list {
   display: flex;
   column-gap: 30px;
 }
 
-.work__photo {
+.work-list__item {
   column-gap: 30px;
   flex-basis: calc((100% - 60px) / 3);
   position: relative;
 }
 
-.work__text {
+.work-list__subtext {
   color: $colorMain;
   font-weight: 700;
   font-size: 14px;

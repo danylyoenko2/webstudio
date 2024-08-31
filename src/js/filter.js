@@ -1,6 +1,6 @@
 "use strict";
 
-const filterBox = document.querySelectorAll(".portfolio__card");
+const filterBox = document.querySelectorAll(".portfolio-content__item");
 
 document
   .querySelector(".portfolio__container")

@@ -1,20 +1,20 @@
-.footer__list {
+.footer-list {
   display: flex;
   flex-direction: column;
   row-gap: 9px;
 }
 
-.footer__list__item {
+.footer-list__item {
   font-size: 14px;
   font-weight: 400;
   line-height: 1.71;
 }
 
-.footer__list__address {
+.footer-list__address {
   color: $colorPage;
   font-style: normal;
 }
 
-.footer__list__link {
+.footer-list__link {
   color: $colorOpacity;
 }

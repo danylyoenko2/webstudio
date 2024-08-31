@@ -1,4 +1,4 @@
-.webnetworks__title {
+.footer-webnetworks__title {
   font-weight: 700;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -7,14 +7,14 @@
   margin-bottom: 20px;
 }
 
-.webnetworks {
+.footer-webnetworks__list {
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 10px;
 }
 
-.webnetwork {
+.footer-webnetwork__item {
   width: 44px;
   height: 44px;
   background-color: rgba(255, 255, 255, 0.1);
@@ -22,11 +22,11 @@
   transition: background-color $animPrimery;
 }
 
-.webnetwork:hover {
+.footer-webnetwork__item:hover {
   background-color: $colorHover;
 }
 
-.webnetwork__link {
+.footer-webnetwork__link {
   width: 44px;
   height: 44px;
   display: flex;
@@ -34,7 +34,7 @@
   justify-content: center;
 }
 
-.footer__webnetwork__icon {
+.footer-webnetwork__icon {
   width: 20px;
   height: 20px;
   fill: $colorMain;
