@@ -18,6 +18,18 @@
     />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link rel="stylesheet" href="./src/css/main.css" />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "rq5JQJp2KGlrTWilA",
+        });
+      })();
+    </script>
+    <script src="./src/js/send.js"></script>
     <title>WebStudio</title>
   </head>
   <body>
@@ -70,7 +82,9 @@
       <section class="hero">
         <div class="container hero__container">
           <h2 class="hero__title">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h2>
-          <button class="hero__button" data-modal-open>Замовити послугу</button>
+          <button class="hero__button button" data-modal-open>
+            Замовити послугу
+          </button>
           <div class="backdrop is__hidden" data-modal>
             <div class="modal">
               <button class="btn__close" data-modal-close>
@@ -93,10 +107,9 @@
                     <input
                       class="contact-form__input"
                       type="text"
-                      name="name"
+                      name="fullName"
                       id="name"
                       required
-                      minlength="3"
                     />
                   </div>
                 </div>
@@ -112,7 +125,7 @@
                       class="contact-form__input"
                       type="tel"
                       name="tel"
-                      id="tel"
+                      id="fullTel"
                       required
                     />
                   </div>
@@ -129,7 +142,7 @@
                       class="contact-form__input"
                       type="email"
                       name="email"
-                      id="email"
+                      id="emailId"
                       required
                       placeholder="webstudio@gmail.com"
                     />
@@ -144,7 +157,7 @@
 
                   <textarea
                     name="comment"
-                    id="comment"
+                    id="message"
                     class="contact-form__comment"
                     placeholder="Введіть текст"
                   ></textarea>
@@ -156,6 +169,7 @@
                     name="checkbox"
                     id="checkbox"
                     class="contact-btn__input"
+                    required
                   />
 
                   Погоджуюся з розсилкою та приймаю
@@ -164,7 +178,9 @@
                   >
                 </div>
 
-                <button class="modal__submit">Відравити</button>
+                <button class="modal__submit" onclick="sendMail()">
+                  Відравити
+                </button>
               </form>
             </div>
           </div>
@@ -270,7 +286,7 @@
                 <li class="team-webnetwork">
                   <a
                     href="https://www.instagram.com/"
-                    class="team-footer-webnetwork__link"
+                    class="team-webnetwork__link"
                   >
                     <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
@@ -280,10 +296,7 @@
                   </a>
                 </li>
                 <li class="team-webnetwork">
-                  <a
-                    href="https://twitter.com/"
-                    class="team-footer-webnetwork__link"
-                  >
+                  <a href="https://twitter.com/" class="team-webnetwork__link">
                     <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-twitter"
@@ -293,10 +306,7 @@
                   </a>
                 </li>
                 <li class="team-webnetwork">
-                  <a
-                    href="https://facebook.com/"
-                    class="team-footer-webnetwork__link"
-                  >
+                  <a href="https://facebook.com/" class="team-webnetwork__link">
                     <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-facebook"
@@ -307,7 +317,7 @@
                 <li class="team-webnetwork">
                   <a
                     href="https://www.linkedin.com/"
-                    class="team-footer-webnetwork__link"
+                    class="team-webnetwork__link"
                   >
                     <svg class="webnetwork__icon team-webnetwork__icon">
                       <use href="./src/img/icons/symbol-defs.svg#icon-in"></use>
@@ -333,7 +343,7 @@
                 <li class="team-webnetwork">
                   <a
                     href="https://www.instagram.com/"
-                    class="team-footer-webnetwork__link"
+                    class="team-webnetwork__link"
                   >
                     <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
@@ -343,10 +353,7 @@
                   </a>
                 </li>
                 <li class="team-webnetwork">
-                  <a
-                    href="https://twitter.com/"
-                    class="team-footer-webnetwork__link"
-                  >
+                  <a href="https://twitter.com/" class="team-webnetwork__link">
                     <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-twitter"
@@ -355,10 +362,7 @@
                   </a>
                 </li>
                 <li class="team-webnetwork">
-                  <a
-                    href="https://facebook.com/"
-                    class="team-footer-webnetwork__link"
-                  >
+                  <a href="https://facebook.com/" class="team-webnetwork__link">
                     <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-facebook"
@@ -369,7 +373,7 @@
                 <li class="team-webnetwork">
                   <a
                     href="https://www.linkedin.com/"
-                    class="team-footer-webnetwork__link"
+                    class="team-webnetwork__link"
                   >
                     <svg class="webnetwork__icon team-webnetwork__icon">
                       <use href="./src/img/icons/symbol-defs.svg#icon-in"></use>
@@ -395,7 +399,7 @@
                 <li class="team-webnetwork">
                   <a
                     href="https://www.instagram.com/"
-                    class="team-footer-webnetwork__link"
+                    class="team-webnetwork__link"
                   >
                     <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
@@ -405,10 +409,7 @@
                   </a>
                 </li>
                 <li class="team-webnetwork">
-                  <a
-                    href="https://twitter.com/"
-                    class="team-footer-webnetwork__link"
-                  >
+                  <a href="https://twitter.com/" class="team-webnetwork__link">
                     <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-twitter"
@@ -417,10 +418,7 @@
                   </a>
                 </li>
                 <li class="team-webnetwork">
-                  <a
-                    href="https://facebook.com/"
-                    class="team-footer-webnetwork__link"
-                  >
+                  <a href="https://facebook.com/" class="team-webnetwork__link">
                     <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-facebook"
@@ -431,7 +429,7 @@
                 <li class="team-webnetwork">
                   <a
                     href="https://www.linkedin.com/"
-                    class="team-footer-webnetwork__link"
+                    class="team-webnetwork__link"
                   >
                     <svg class="webnetwork__icon team-webnetwork__icon">
                       <use href="./src/img/icons/symbol-defs.svg#icon-in"></use>
@@ -456,7 +454,7 @@
                 <li class="team-webnetwork">
                   <a
                     href="https://www.instagram.com/"
-                    class="team-footer-webnetwork__link"
+                    class="team-webnetwork__link"
                   >
                     <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
@@ -466,10 +464,7 @@
                   </a>
                 </li>
                 <li class="team-webnetwork">
-                  <a
-                    href="https://twitter.com/"
-                    class="team-footer-webnetwork__link"
-                  >
+                  <a href="https://twitter.com/" class="team-webnetwork__link">
                     <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-twitter"
@@ -478,10 +473,7 @@
                   </a>
                 </li>
                 <li class="team-webnetwork">
-                  <a
-                    href="https://facebook.com/"
-                    class="team-footer-webnetwork__link"
-                  >
+                  <a href="https://facebook.com/" class="team-webnetwork__link">
                     <svg class="webnetwork__icon team-webnetwork__icon">
                       <use
                         href="./src/img/icons/symbol-defs.svg#icon-facebook"
@@ -492,7 +484,7 @@
                 <li class="team-webnetwork">
                   <a
                     href="https://www.linkedin.com/"
-                    class="team-footer-webnetwork__link"
+                    class="team-webnetwork__link"
                   >
                     <svg class="webnetwork__icon team-webnetwork__icon">
                       <use href="./src/img/icons/symbol-defs.svg#icon-in"></use>
@@ -668,7 +660,7 @@
                 class="subscribe-form__input"
               />
             </div>
-            <button class="subscribe-form__btn">
+            <button class="button subscribe-form__btn">
               Підписатися
               <svg class="subscribe-form__icon">
                 <use

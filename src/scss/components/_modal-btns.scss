@@ -18,7 +18,7 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.accept__btn__input {
+.contact-btn__input {
   font-weight: 400;
   font-size: 14px;
   line-height: 171%;
@@ -28,23 +28,15 @@
   height: 15px;
 }
 
-.accept__btn__span {
+.accept__btn--span {
   color: $colorHover;
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
 
 .modal__submit {
-  color: $colorMain;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 187%;
-  letter-spacing: 0.06em;
-  text-align: center;
+  @extend %button;
   padding: 10px 52px;
-  background-color: $colorHover;
-  border-radius: 4px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   margin: 0 auto;
   display: block;
   transition: background-color $animPrimery;

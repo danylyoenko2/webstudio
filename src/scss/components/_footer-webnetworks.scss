@@ -8,9 +8,7 @@
 }
 
 .footer-webnetworks__list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-grid;
   column-gap: 10px;
 }
 
@@ -29,9 +27,7 @@
 .footer-webnetwork__link {
   width: 44px;
   height: 44px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %flex-grid;
 }
 
 .footer-webnetwork__icon {

@@ -1,7 +1,5 @@
 .subscribe-form__wrapper {
-  display: flex;
-  align-items: baseline;
-  justify-content: center;
+  @extend %flex-grid;
   gap: 12px;
 }
 
@@ -15,29 +13,18 @@
 }
 
 .subscribe-form__input {
+  @include formWrapper;
+  border: 1px solid rgba(255, 255, 255, 0.3);
   padding: 16px 0px 15px 16px;
   width: 360px;
   background-color: rgba(0, 0, 0, 0);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-
-  &:focus {
-    border: 1px solid $colorHover;
-  }
+  color: $colorMain;
 }
 
 .subscribe-form__btn {
-  color: $colorMain;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 187%;
-  letter-spacing: 0.06em;
-  text-align: center;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
+  @extend %button;
   padding: 10px 28px;
-  background-color: $colorHover;
   display: flex;
   align-items: center;
   gap: 10px;

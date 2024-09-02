@@ -1,7 +1,5 @@
 .portfolio-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  @extend %flex-grid-wrap;
   gap: 30px;
 }
 

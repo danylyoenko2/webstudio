@@ -1,7 +1,10 @@
-@import "./utils/keyframes";
-
 @import "./base/variables";
 @import "./base/typographics";
+
+@import "./utils/mixins";
+@import "./utils/keyframes";
+@import "./utils/placeholders";
+
 @import "./base/base";
 @import "./base/reset";
 

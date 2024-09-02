@@ -4,9 +4,7 @@
 }
 
 .team-cards {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-grid;
   column-gap: 30px;
 }
 
@@ -49,9 +47,7 @@
 }
 
 .team-webnetworks {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-grid;
   column-gap: 10px;
   margin-bottom: 30px;
 }
@@ -68,9 +64,7 @@
 }
 
 .team-webnetwork__link {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %flex-grid;
   width: 44px;
   height: 44px;
 }

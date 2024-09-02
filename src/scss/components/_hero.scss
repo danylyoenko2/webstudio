@@ -11,10 +11,8 @@
 }
 
 .hero__container {
-  display: flex;
+  @extend %flex-grid;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   row-gap: 30px;
 }
 
@@ -31,14 +29,8 @@
 }
 
 .hero__button {
-  color: $colorPage;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 1.87;
+  @extend %button;
   padding: 10px 32px;
-  background-color: $colorHover;
-  border-radius: 4px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color $animPrimery;
   animation: showRight 1.5s ease 0.1s;
 }

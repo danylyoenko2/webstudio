@@ -11,7 +11,7 @@
 }
 
 .work-list {
-  display: flex;
+  @extend %flex-grid;
   column-gap: 30px;
 }
 
