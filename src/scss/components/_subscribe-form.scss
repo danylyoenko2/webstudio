@@ -22,20 +22,9 @@
   color: $colorMain;
 }
 
-.subscribe-form__btn {
-  @extend %button;
+.subscribe-form__button {
   padding: 10px 28px;
   display: flex;
   align-items: center;
   gap: 10px;
-  transition: background-color $animPrimery;
-}
-
-.subscribe-form__btn:hover {
-  background-color: $colorBtnHover;
-}
-
-.subscribe-form__icon {
-  width: 24px;
-  height: 24px;
 }

@@ -34,14 +34,6 @@
   text-decoration-skip-ink: none;
 }
 
-.modal__submit {
-  @extend %button;
+.contact-form__button {
   padding: 10px 52px;
-  margin: 0 auto;
-  display: block;
-  transition: background-color $animPrimery;
-}
-
-.modal__submit:hover {
-  background-color: $colorBtnHover;
 }

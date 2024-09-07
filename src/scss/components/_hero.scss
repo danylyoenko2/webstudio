@@ -29,12 +29,5 @@
 }
 
 .hero__button {
-  @extend %button;
-  padding: 10px 32px;
-  transition: background-color $animPrimery;
   animation: showRight 1.5s ease 0.1s;
-}
-
-.hero__button:hover {
-  background-color: $colorBtnHover;
 }

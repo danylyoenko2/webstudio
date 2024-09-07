@@ -14,6 +14,7 @@
   flex-basis: calc((100% - 90px) / 4);
   border-radius: 0 0 4px 4px;
   background-color: $colorMain;
+  padding-bottom: 30px;
 }
 
 .team-member__photo {
@@ -44,31 +45,4 @@
   letter-spacing: 0.03em;
   text-align: center;
   padding-bottom: 16px;
-}
-
-.team-webnetworks {
-  @extend %flex-grid;
-  column-gap: 10px;
-  margin-bottom: 30px;
-}
-
-.team-webnetwork {
-  border-radius: 100%;
-  width: 44px;
-  height: 44px;
-  transition: background-color $animPrimery;
-}
-
-.team-webnetwork:hover {
-  background-color: $colorHover;
-}
-
-.team-webnetwork__link {
-  @extend %flex-grid;
-  width: 44px;
-  height: 44px;
-}
-
-.team-webnetwork__link:hover .team-webnetwork__icon {
-  fill: $colorMain;
 }

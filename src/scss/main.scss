@@ -1,6 +1,5 @@
-@import "./base/variables";
-@import "./base/typographics";
-
+@import "./utils/variables";
+@import "./utils/typographics";
 @import "./utils/mixins";
 @import "./utils/keyframes";
 @import "./utils/placeholders";
@@ -10,6 +9,8 @@
 
 @import "./layout/grids";
 
+@import "./components/social-web";
+@import "./components/button";
 @import "./components/header";
 @import "./components/hero";
 @import "./components/backdrop";
@@ -19,7 +20,6 @@
 @import "./components/advantages";
 @import "./components/work";
 @import "./components/team";
-@import "./components/webnetworks";
 @import "./components/client";
 @import "./components/portfolio";
 @import "./components/portfolio-filters";
@@ -28,4 +28,4 @@
 @import "./components/logo";
 @import "./components/footer-items";
 @import "./components/footer-webnetworks";
-@import "./components/footer-forms";
+@import "./components/subscribe-form";
