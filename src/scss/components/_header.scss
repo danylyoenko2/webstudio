@@ -7,8 +7,16 @@
   display: flex;
   column-gap: 93px;
 }
+
+.logo--header {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 .menu {
-  @include textPrimery;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
 }
 
 .menu {
@@ -94,4 +102,59 @@
 
 .contact__list:hover .contact__icon {
   fill: $colorHover;
+}
+
+.hidden-menu {
+  display: none;
+  width: 40px;
+  height: 40px;
+  padding: 12px 8px;
+}
+
+.hidden-menu__icon {
+  fill: #000;
+}
+
+.hidden-menu__container {
+  height: 100vh;
+  width: 100vw;
+}
+
+@media (max-width: 1199px) {
+  .contact {
+    align-items: flex-start;
+    flex-direction: column;
+    row-gap: 10px;
+  }
+
+  .menu__link {
+    &::after {
+      bottom: -39px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .header__container {
+    justify-content: center;
+  }
+
+  .menu__list {
+    column-gap: 30px;
+  }
+}
+
+@media (max-width: 575px) {
+  .menu {
+    display: none;
+  }
+
+  .header__container {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .hidden-menu {
+    display: block;
+  }
 }

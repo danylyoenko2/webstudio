@@ -1,5 +1,5 @@
 .contact-form__wrapper {
-  @include formWrapper;
+  @extend %formWrapper;
   margin-bottom: 10px;
 }
 
@@ -60,4 +60,14 @@
   gap: 5px;
   margin-bottom: 30px;
   color: $colorAdvantages;
+}
+
+@media (max-width: 767px) {
+  .contact-form {
+    max-width: 370px;
+  }
+
+  .contact-form__comment {
+    width: 370px;
+  }
 }

@@ -35,3 +35,9 @@
   padding-bottom: 27px;
   background-color: $colorWork;
 }
+
+@media (max-width: 767px) {
+  .work {
+    display: none;
+  }
+}

@@ -31,3 +31,9 @@
 .hero__button {
   animation: showRight 1.5s ease 0.1s;
 }
+
+@media (max-width: 767px) {
+  .hero {
+    padding-bottom: 60px;
+  }
+}

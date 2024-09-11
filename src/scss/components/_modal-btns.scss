@@ -21,7 +21,7 @@
 .contact-btn__input {
   font-weight: 400;
   font-size: 14px;
-  line-height: 171%;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   text-align: center;
   width: 16px;
@@ -36,4 +36,10 @@
 
 .contact-form__button {
   padding: 10px 52px;
+}
+
+@media (max-width: 767px) {
+  .contact-btn__text {
+    font-size: 12px;
+  }
 }

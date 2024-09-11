@@ -48,11 +48,14 @@
 
 .portfolio-content__back {
   position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
   color: $colorMain;
   background-color: rgba(33, 150, 243, 0.9);
   font-weight: 400;
   font-size: 18px;
-  line-height: 156%;
+  line-height: 1.56;
   letter-spacing: 0.03em;
   padding: 63px 24px;
   top: 0;
@@ -62,4 +65,24 @@
 
 .hide {
   display: none;
+}
+
+@media (max-width: 991px) {
+  .portfolio-content__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  .portfolio-content__back {
+    transform: translateY(155%);
+  }
+
+  .portfolio-content {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 575px) {
+  .portfolio-content__item {
+    flex-basis: 100%;
+  }
 }

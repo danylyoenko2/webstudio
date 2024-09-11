@@ -13,20 +13,29 @@
 
 .clients-list {
   @extend %flex-grid;
-  column-gap: 30px;
+  gap: 30px;
+}
+
+.client__item {
+  transition: border $animPrimery;
+  border: 1px solid $colorClients;
+  border-radius: 4px;
+
+  &:hover {
+    border: 1px solid $colorHover;
+  }
+
+  &:hover .client__icon {
+    fill: $colorHover;
+  }
 }
 
 .client__link {
   padding: 16px 32px;
   display: block;
-  border-radius: 4px;
-  transition: border $animPrimery;
-  border: 1px solid $colorClients;
-  border-radius: 4px;
-}
-
-.client__link:hover {
-  border: 1px solid $colorHover;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
 }
 
 .client:hover .client__icon {
@@ -38,4 +47,20 @@
   height: 60px;
   fill: $colorClients;
   transition: fill $animPrimery;
+}
+
+@media (max-width: 1199px) {
+  .clients-list {
+    flex-wrap: wrap;
+  }
+
+  .client__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+
+@media (max-width: 575px) {
+  .client__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
 }

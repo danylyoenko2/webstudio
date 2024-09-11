@@ -35,7 +35,7 @@
   <body>
     <header class="header">
       <div class="container header__container">
-        <a href="#" class="logo"
+        <a href="#" class="logo logo--header"
           ><img
             class="logo__photo"
             src="./src/img/logo/WebStudio.svg"
@@ -76,6 +76,22 @@
             </li>
           </ul>
         </nav>
+        <button class="hidden-menu">
+          <svg
+            width="24"
+            height="16"
+            viewBox="0 0 24 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              clip-rule="evenodd"
+              d="M0 2.66667V0H24V2.66667H0ZM0 9.33333H24V6.66667H0V9.33333ZM0 16H24V13.3333H0V16Z"
+              fill="black"
+            />
+          </svg>
+        </button>
       </div>
     </header>
     <main class="main">
@@ -172,10 +188,12 @@
                     required
                   />
 
-                  Погоджуюся з розсилкою та приймаю
-                  <a href="#" class="contact-accept__link"
-                    ><span class="accept__btn--span">Умови договору</span></a
-                  >
+                  <p class="contact-btn__text">
+                    Погоджуюся з розсилкою та приймаю
+                    <a href="#" class="contact-accept__link"
+                      ><span class="accept__btn--span">Умови договору</span></a
+                    >
+                  </p>
                 </div>
 
                 <button
@@ -661,6 +679,7 @@
       </div>
     </footer>
     <script src="./src/js/modal.js"></script>
+    <script src="./src/js/menu.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();

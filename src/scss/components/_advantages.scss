@@ -29,7 +29,7 @@
 .advantages__list {
   display: flex;
   justify-content: space-between;
-  column-gap: 30px;
+  gap: 30px;
 }
 
 .advantages__item {
@@ -52,4 +52,24 @@
   font-size: 14px;
   line-height: 171%;
   letter-spacing: 0.03em;
+}
+
+@media (max-width: 991px) {
+  .advantages {
+    padding-bottom: 60px;
+  }
+
+  .advantages__list {
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    flex-basis: calc((100% - 45px) / 2);
+  }
+}
+
+@media (max-width: 575px) {
+  .advantages__item {
+    flex-basis: 100%;
+  }
 }

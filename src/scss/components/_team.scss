@@ -5,7 +5,7 @@
 
 .team-cards {
   @extend %flex-grid;
-  column-gap: 30px;
+  gap: 30px;
 }
 
 .team-member {
@@ -26,7 +26,6 @@
   font-size: 36px;
   letter-spacing: 0.03em;
   text-align: center;
-  font-weight: 700;
   margin-bottom: 50px;
 }
 
@@ -45,4 +44,30 @@
   letter-spacing: 0.03em;
   text-align: center;
   padding-bottom: 16px;
+}
+
+@media (max-width: 991px) {
+  .team {
+    padding-bottom: 60px;
+  }
+
+  .team-cards {
+    flex-wrap: wrap;
+  }
+
+  .team-member {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media (max-width: 767px) {
+  .team-member__name {
+    margin-bottom: 10px;
+  }
+}
+
+@media (max-width: 575px) {
+  .team-member {
+    flex-basis: 100%;
+  }
 }
