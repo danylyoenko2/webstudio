@@ -104,12 +104,16 @@
   fill: $colorHover;
 }
 
+.social__list {
+  display: none;
+}
+
 .mobile-menu {
   display: none;
 }
 
 .mobile-menu__btn {
-  display: flex;
+  display: none;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -230,6 +234,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .mobile-menu__btn {
+    display: flex;
   }
 
   .menu__list {

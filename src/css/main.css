@@ -368,12 +368,16 @@ button {
   fill: #2196f3;
 }
 
+.social__list {
+  display: none;
+}
+
 .mobile-menu {
   display: none;
 }
 
 .mobile-menu__btn {
-  display: flex;
+  display: none;
   position: relative;
   align-items: center;
   justify-content: center;
@@ -478,6 +482,9 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+  .mobile-menu__btn {
+    display: flex;
   }
   .menu__list {
     flex-direction: column;
@@ -880,7 +887,7 @@ button {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .work {
     display: none;
   }
@@ -933,6 +940,7 @@ button {
 
 @media (max-width: 991px) {
   .team {
+    padding-top: 60px;
     padding-bottom: 60px;
   }
   .team-cards {
@@ -1006,6 +1014,12 @@ button {
   }
   .client__item {
     flex-basis: calc((100% - 60px) / 3);
+  }
+}
+@media (max-width: 991px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 }
 @media (max-width: 575px) {
@@ -1174,12 +1188,22 @@ button {
 }
 
 @media (max-width: 991px) {
+  .footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .footer__container {
     flex-wrap: wrap;
     justify-content: center;
     -moz-column-gap: 165px;
          column-gap: 165px;
     row-gap: 60px;
+  }
+  .footer-webnetworks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 .footer-list {
@@ -1203,6 +1227,18 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 
+@media (max-width: 991px) {
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer-info .footer-list {
+    align-items: center;
+    justify-content: center;
+  }
+}
 .subscribe-form__wrapper {
   gap: 12px;
 }

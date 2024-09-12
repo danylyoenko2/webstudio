@@ -18,3 +18,17 @@
 .footer-list__link {
   color: $colorOpacity;
 }
+
+@media (max-width: 991px) {
+  .footer-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .footer-list {
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}

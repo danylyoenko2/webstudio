@@ -59,6 +59,13 @@
   }
 }
 
+@media (max-width: 991px) {
+  .clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
 @media (max-width: 575px) {
   .client__item {
     flex-basis: calc((100% - 30px) / 2);
