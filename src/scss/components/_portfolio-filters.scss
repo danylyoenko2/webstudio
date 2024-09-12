@@ -1,6 +1,7 @@
 .portfolio-list {
   @extend %flex-grid;
   column-gap: 8px;
+  row-gap: 15px;
   margin: 0 auto;
   margin-bottom: 50px;
 }

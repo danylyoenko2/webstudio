@@ -1,15 +1,9 @@
 "use strict";
 
-const refs = {
-  openMenuBtn: document.querySelector("[data-menu-open]"),
-  menu: document.querySelector("[data-menu]"),
-  closeMenuBtn: document.querySelector("[data-menu-close]"),
-};
-
-const toggleModal = () => {
-  refs.modal.classList.toggle("is__hidden");
-  document.body.classList.toggle("no-scroll");
-};
-
-refs.openModalBtn.addEventListener("click", toggleModal);
-refs.closeModalBtn.addEventListener("click", toggleModal);
+document
+  .querySelector(".mobile-menu__btn")
+  .addEventListener("click", function () {
+    this.classList.toggle("active");
+    document.querySelector(".menu").classList.toggle("open");
+    document.body.classList.toggle("no-scroll");
+  });

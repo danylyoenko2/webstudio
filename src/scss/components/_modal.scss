@@ -9,6 +9,10 @@
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14),
     0 1px 3px 0 rgba(0, 0, 0, 0.12);
   opacity: 1;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   transition: opacity $animSlowly;
   transition: transform $animSlowly;
 }
@@ -37,5 +41,15 @@
 
   .modal__title {
     max-width: 370px;
+  }
+}
+
+@media (max-width: 460px) {
+  .modal__title {
+    max-width: 320px;
+  }
+  .modal {
+    min-width: 410px;
+    padding: 20px;
   }
 }
