@@ -204,6 +204,10 @@ button {
   min-width: 320px;
 }
 
+.main {
+  overflow-x: hidden;
+}
+
 @media (max-width: 575px) {
   .container {
     overflow: hidden;
