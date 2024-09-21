@@ -1,6 +1,6 @@
 .clients {
-  padding-top: 126px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .clients__title {
@@ -12,28 +12,37 @@
 }
 
 .clients-list {
-  @extend %flex-grid;
-  column-gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.client__link {
+.client-list__item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.client-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 16px 32px;
-  display: block;
   border-radius: 4px;
   transition: border $animPrimery;
   border: 1px solid $colorClients;
   border-radius: 4px;
+
+  &:hover {
+    border: 1px solid $colorHover;
+  }
+
+  &:hover .client-list__icon {
+    fill: $colorHover;
+  }
 }
 
-.client__link:hover {
-  border: 1px solid $colorHover;
-}
-
-.client:hover .client__icon {
-  fill: $colorHover;
-}
-
-.client__icon {
+.client-list__icon {
   width: 106px;
   height: 60px;
   fill: $colorClients;

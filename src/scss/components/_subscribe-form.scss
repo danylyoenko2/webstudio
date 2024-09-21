@@ -1,6 +1,17 @@
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .subscribe-form__wrapper {
-  @extend %flex-grid;
-  gap: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .subscribe-form__title {
@@ -20,6 +31,8 @@
   background-color: rgba(0, 0, 0, 0);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   color: $colorMain;
+  flex-grow: 1;
+  align-self: center;
 }
 
 .subscribe-form__button {

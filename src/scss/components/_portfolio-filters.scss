@@ -1,6 +1,9 @@
 .portfolio-list {
-  @extend %flex-grid;
-  column-gap: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
   margin: 0 auto;
   margin-bottom: 50px;
 }

@@ -6,8 +6,11 @@
 
 .footer__container {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  column-gap: 165px;
+  row-gap: 60px;
 }
 
 .footer__logo {
@@ -22,4 +25,11 @@
   text-transform: uppercase;
   color: $colorMain;
   margin-bottom: 20px;
+}
+
+.footer-webnetworks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

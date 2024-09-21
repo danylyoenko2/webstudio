@@ -50,7 +50,7 @@ body {
   border-radius: 4px;
 }
 
-.subscribe-form__wrapper, .portfolio-list, .clients-list, .team-cards, .work-list, .hero__container, .social-web__link, .social-web {
+.work-list, .hero__container, .social-web__link, .social-web {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -261,30 +261,42 @@ button {
   font-weight: 500;
   font-size: 14px;
   letter-spacing: 0.02em;
-}
-
-.menu {
   display: none;
-  justify-content: space-between;
-  flex-grow: 1;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  padding: 40px;
+  background-color: #fff;
+  z-index: 20;
+  gap: 65px;
+  animation: mobileMenuAnimation 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
 }
 
 .menu__list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  -moz-column-gap: 50px;
-       column-gap: 50px;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 32px;
+  flex-grow: 1;
   position: relative;
 }
 
 .menu__item {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   position: relative;
+  font-size: 40px;
 }
-
-.menu__link::after {
+.menu__item::after {
   content: "";
+  display: none;
   position: absolute;
   border-radius: 2px;
   width: 100%;
@@ -296,7 +308,7 @@ button {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.menu__link:hover::after,
+.menu__link .menu__link:hover::after,
 .link__active::after {
   transform: scaleX(1);
 }
@@ -309,7 +321,25 @@ button {
        column-gap: 50px;
 }
 
-.contact__list,
+.contact__list {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: 32px;
+}
+
+.contact__item--email {
+  font-size: 24px;
+}
+
+.contact__item--phone {
+  font-size: 34px;
+}
+.contact__item--phone .contact__link--phone {
+  color: #2196f3;
+}
+
+.contact__item,
 .contact__link {
   color: rgba(0, 0, 0, 0.6);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -321,6 +351,10 @@ button {
   align-items: center;
   -moz-column-gap: 10px;
        column-gap: 10px;
+}
+
+.contact__icon {
+  display: none;
 }
 
 .contact__icon--email {
@@ -402,12 +436,43 @@ button {
   display: none;
 }
 
+.social__list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.social__item {
+  color: #2196f3;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.22;
+  letter-spacing: 0.02em;
+}
+
+.open {
+  display: flex;
+}
+
 @media (min-width: 578px) {
   .menu {
     display: flex;
   }
   .mobile-menu__btn {
     display: none;
+  }
+  .open {
+    display: none;
+  }
+}
+@keyframes mobileMenuAnimation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 .hero {
@@ -609,10 +674,23 @@ button {
 }
 
 .advantages {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
+.advantages__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+
+.advantages__item {
+  flex-basis: 100%;
+  animation: showUp 1.3s ease 0s;
+  z-index: -1;
+}
 .advantages__item::before {
   content: "";
   display: block;
@@ -623,30 +701,14 @@ button {
   background-repeat: no-repeat;
   margin-bottom: 30px;
 }
-
-.advantages__item--2::before {
+.advantages__item.advantages__item--2::before {
   background-image: url(../img/icons/clock.svg);
 }
-
-.advantages__item--3::before {
+.advantages__item.advantages__item--3::before {
   background-image: url(../img/icons/diagram.svg);
 }
-
-.advantages__item--4::before {
+.advantages__item.advantages__item--4::before {
   background-image: url(../img/icons/astronaut.svg);
-}
-
-.advantages__list {
-  display: flex;
-  justify-content: space-between;
-  -moz-column-gap: 30px;
-       column-gap: 30px;
-}
-
-.advantages__item {
-  flex-basis: calc((100% - 90px) / 4);
-  animation: showUp 1.3s ease 0s;
-  z-index: -1;
 }
 
 .advantages__title {
@@ -667,6 +729,7 @@ button {
 
 .work {
   padding-bottom: 94px;
+  display: none;
 }
 
 .work__title {
@@ -705,18 +768,23 @@ button {
 }
 
 .team {
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 
 .team-cards {
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
 .team-member {
+  max-width: 450px;
   box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12);
-  flex-basis: calc((100% - 90px) / 4);
+  flex-basis: 100%;
   border-radius: 0 0 4px 4px;
   background-color: #ffffff;
   padding-bottom: 30px;
@@ -753,8 +821,8 @@ button {
 }
 
 .clients {
-  padding-top: 126px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .clients__title {
@@ -766,28 +834,35 @@ button {
 }
 
 .clients-list {
-  -moz-column-gap: 30px;
-       column-gap: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.client__link {
+.client-list__item {
+  flex-basis: calc((100% - 30px) / 2);
+}
+
+.client-list__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding: 16px 32px;
-  display: block;
   border-radius: 4px;
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-
-.client__link:hover {
+.client-list__link:hover {
   border: 1px solid #2196f3;
 }
-
-.client:hover .client__icon {
+.client-list__link:hover .client-list__icon {
   fill: #2196f3;
 }
 
-.client__icon {
+.client-list__icon {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
@@ -800,8 +875,11 @@ button {
 }
 
 .portfolio-list {
-  -moz-column-gap: 8px;
-       column-gap: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
   margin: 0 auto;
   margin-bottom: 50px;
 }
@@ -828,11 +906,12 @@ button {
 
 .portfolio-content {
   gap: 30px;
+  justify-content: flex-start;
 }
 
 .portfolio-content__item {
   border: 1px solid #eee;
-  flex-basis: calc((100% - 60px) / 3);
+  flex-basis: 100%;
   padding-bottom: 20px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -874,15 +953,18 @@ button {
 
 .portfolio-content__back {
   position: absolute;
+  display: flex;
+  align-items: center;
+  height: 100%;
   color: #ffffff;
   background-color: rgba(33, 150, 243, 0.9);
   font-weight: 400;
   font-size: 18px;
-  line-height: 156%;
+  line-height: 1.56;
   letter-spacing: 0.03em;
   padding: 63px 24px;
   top: 0;
-  transform: translateY(100%);
+  transform: translateY(155%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -898,8 +980,12 @@ button {
 
 .footer__container {
   display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  -moz-column-gap: 165px;
+       column-gap: 165px;
+  row-gap: 60px;
 }
 
 .footer__logo {
@@ -916,9 +1002,24 @@ button {
   margin-bottom: 20px;
 }
 
+.footer-webnetworks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .footer-list {
   display: flex;
   flex-direction: column;
+  align-items: center;
   row-gap: 9px;
 }
 
@@ -937,8 +1038,20 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .subscribe-form__wrapper {
-  gap: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .subscribe-form__title {
@@ -959,6 +1072,8 @@ button {
   background-color: rgba(0, 0, 0, 0);
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   color: #ffffff;
+  flex-grow: 1;
+  align-self: center;
 }
 .subscribe-form__input:hover {
   border: 1px solid #2196f3;
