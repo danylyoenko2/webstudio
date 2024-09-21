@@ -190,6 +190,10 @@ button {
   margin: 0 auto;
 }
 
+.main {
+  overflow-x: hidden;
+}
+
 .social-web {
   -moz-column-gap: 10px;
        column-gap: 10px;
@@ -246,6 +250,8 @@ button {
 
 .header__container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   -moz-column-gap: 93px;
        column-gap: 93px;
 }
@@ -258,7 +264,7 @@ button {
 }
 
 .menu {
-  display: flex;
+  display: none;
   justify-content: space-between;
   flex-grow: 1;
 }
@@ -345,6 +351,65 @@ button {
   fill: #2196f3;
 }
 
+.social__list {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu__btn {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 18px;
+  padding: 0;
+  z-index: 20;
+}
+.mobile-menu__btn .mobile-menu__stick {
+  display: block;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  transform: scale(1);
+}
+.mobile-menu__btn::after, .mobile-menu__btn::before {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background-color: #000;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__btn::before {
+  top: 0;
+}
+.mobile-menu__btn::after {
+  bottom: 0;
+}
+.mobile-menu__btn.active::before {
+  top: 50%;
+  transform: rotate(-45deg) translateY(-50%);
+}
+.mobile-menu__btn.active::after {
+  bottom: 50%;
+  transform: rotate(45deg) translateY(50%);
+}
+.mobile-menu__btn.active .mobile-menu__stick {
+  display: none;
+}
+
+@media (min-width: 578px) {
+  .menu {
+    display: flex;
+  }
+  .mobile-menu__btn {
+    display: none;
+  }
+}
 .hero {
   background-color: #2f303a;
   text-align: center;
@@ -870,15 +935,6 @@ button {
 
 .footer-list__link {
   color: rgba(255, 255, 255, 0.6);
-}
-
-.footer-webnetworks__title {
-  font-weight: 700;
-  font-size: 14px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: #ffffff;
-  margin-bottom: 20px;
 }
 
 .subscribe-form__wrapper {

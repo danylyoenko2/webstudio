@@ -5,6 +5,8 @@
 
 .header__container {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   column-gap: 93px;
 }
 .menu {
@@ -94,4 +96,72 @@
 
 .contact__list:hover .contact__icon {
   fill: $colorHover;
+}
+
+.social__list {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.mobile-menu__btn {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 18px;
+  padding: 0;
+  z-index: 20;
+
+  .mobile-menu__stick {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    transform: scale(1);
+  }
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+    transition: transform $animPrimery;
+  }
+
+  &::before {
+    top: 0;
+  }
+
+  &::after {
+    bottom: 0;
+  }
+
+  &.active::before {
+    top: 50%;
+    transform: rotate(-45deg) translateY(-50%);
+  }
+
+  &.active::after {
+    bottom: 50%;
+    transform: rotate(45deg) translateY(50%);
+  }
+
+  &.active .mobile-menu__stick {
+    display: none;
+  }
+}
+
+@media (min-width: 578px) {
+  .menu {
+    display: flex;
+  }
+  .mobile-menu__btn {
+    display: none;
+  }
 }
