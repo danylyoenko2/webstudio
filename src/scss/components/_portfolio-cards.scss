@@ -67,3 +67,15 @@
 .hide {
   display: none;
 }
+
+@media (min-width: 768px) {
+  .portfolio-content__item {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+}
+
+@media (min-width: 1170px) {
+  .portfolio-content__item {
+    flex-basis: calc((100% - 90px) / 3);
+  }
+}

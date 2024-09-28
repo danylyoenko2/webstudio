@@ -54,3 +54,15 @@
   line-height: 171%;
   letter-spacing: 0.03em;
 }
+
+@media (min-width: 578px) {
+  .advantages__item {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+}
+
+@media (min-width: 968px) {
+  .advantages__item {
+    flex-basis: calc((100% - 90px) / 4);
+  }
+}

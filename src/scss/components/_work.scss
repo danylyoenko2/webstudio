@@ -36,3 +36,9 @@
   padding-bottom: 27px;
   background-color: $colorWork;
 }
+
+@media (min-width: 968px) {
+  .work {
+    display: flex;
+  }
+}

@@ -48,3 +48,19 @@
   fill: $colorClients;
   transition: fill $animPrimery;
 }
+
+@media (min-width: 578px) {
+  .client-list__item {
+    flex-basis: calc((100% - 60px) / 3);
+  }
+}
+
+@media (min-width: 968px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+  .clients-list {
+    flex-wrap: nowrap;
+  }
+}

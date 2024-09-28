@@ -26,3 +26,13 @@
 .footer-list__link {
   color: $colorOpacity;
 }
+
+@media (min-width: 968px) {
+  .footer-info {
+    align-items: self-start;
+  }
+
+  .footer-list {
+    align-items: self-start;
+  }
+}

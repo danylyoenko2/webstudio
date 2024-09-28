@@ -33,3 +33,22 @@
   justify-content: center;
   align-items: center;
 }
+
+@media (min-width: 968px) {
+  .footer {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .footer__container {
+    align-items: baseline;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    column-gap: 0;
+    row-gap: 0;
+  }
+
+  .footer-webnetworks {
+    align-items: self-start;
+  }
+}
