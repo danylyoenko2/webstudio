@@ -183,6 +183,10 @@ button {
   outline: none;
 }
 
+body {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1200px;
   padding-left: 15px;
@@ -194,6 +198,11 @@ button {
   overflow-x: hidden;
 }
 
+@media (min-width: 991px) {
+  body {
+    overflow: none;
+  }
+}
 .social-web {
   -moz-column-gap: 10px;
        column-gap: 10px;
