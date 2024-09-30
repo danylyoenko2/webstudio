@@ -59,11 +59,16 @@
   justify-content: center;
   gap: 5px;
   margin-bottom: 30px;
+  font-size: 12px;
   color: $colorAdvantages;
 }
 
 @media (min-width: 1170px) {
   .contact-form__comment {
     width: 450px;
+  }
+
+  .contact-checkbox__field {
+    font-size: 14px;
   }
 }
