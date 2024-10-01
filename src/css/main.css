@@ -184,7 +184,7 @@ button {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -198,9 +198,9 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: 991px) {
+@media (min-width: 768px) {
   body {
-    overflow: none;
+    overflow-x: none;
   }
 }
 .social-web {
@@ -519,7 +519,7 @@ body {
     display: inline-block;
   }
 }
-@media (min-width: 968px) {
+@media (min-width: 1200px) {
   .menu__link::after {
     bottom: -25px;
   }
@@ -616,7 +616,7 @@ body {
   margin-bottom: 12px;
 }
 
-@media (min-width: 1170px) {
+@media (min-width: 1200px) {
   .modal {
     max-width: none;
     min-width: 528px;
@@ -737,7 +737,7 @@ body {
   color: #757575;
 }
 
-@media (min-width: 1170px) {
+@media (min-width: 1200px) {
   .contact-form__comment {
     width: 450px;
   }
@@ -804,7 +804,7 @@ body {
     flex-basis: calc((100% - 30px) / 2);
   }
 }
-@media (min-width: 968px) {
+@media (min-width: 768px) {
   .advantages__item {
     flex-basis: calc((100% - 90px) / 4);
   }
@@ -849,7 +849,7 @@ body {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-@media (min-width: 968px) {
+@media (min-width: 768px) {
   .work {
     display: flex;
   }
@@ -912,7 +912,7 @@ body {
     flex-basis: calc((100% - 30px) / 2);
   }
 }
-@media (min-width: 968px) {
+@media (min-width: 768px) {
   .team {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -975,7 +975,7 @@ body {
     flex-basis: calc((100% - 60px) / 3);
   }
 }
-@media (min-width: 968px) {
+@media (min-width: 768px) {
   .clients {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -989,7 +989,7 @@ body {
   padding-bottom: 60px;
 }
 
-@media (min-width: 968px) {
+@media (min-width: 768px) {
   .portfolio {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1028,10 +1028,6 @@ body {
 @media (min-width: 768px) {
   .portfolio-list {
     justify-content: center;
-  }
-}
-@media (min-width: 1170px) {
-  .portfolio-list {
     margin-bottom: 50px;
   }
 }
@@ -1108,7 +1104,7 @@ body {
     flex-basis: calc((100% - 60px) / 2);
   }
 }
-@media (min-width: 1170px) {
+@media (min-width: 1200px) {
   .portfolio-content__item {
     flex-basis: calc((100% - 90px) / 3);
   }
@@ -1150,7 +1146,7 @@ body {
   align-items: center;
 }
 
-@media (min-width: 968px) {
+@media (min-width: 768px) {
   .footer {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1196,7 +1192,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media (min-width: 968px) {
+@media (min-width: 768px) {
   .footer-info {
     align-items: self-start;
   }
@@ -1257,7 +1253,7 @@ body {
   gap: 10px;
 }
 
-@media (min-width: 968px) {
+@media (min-width: 768px) {
   .subscribe-form {
     display: block;
   }

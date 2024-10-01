@@ -1,5 +1,5 @@
 body {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .container {
@@ -13,8 +13,8 @@ body {
   overflow-x: hidden;
 }
 
-@media (min-width: 991px) {
+@media (min-width: 768px) {
   body {
-    overflow: none;
+    overflow-x: none;
   }
 }
