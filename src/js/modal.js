@@ -7,7 +7,7 @@ const refs = {
 };
 
 const toggleModal = () => {
-  refs.modal.classList.toggle("is-hidden");
+  refs.modal.classList.toggle("is__hidden");
   document.body.classList.toggle("no-scroll");
 };
 
