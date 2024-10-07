@@ -536,7 +536,7 @@ body {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-image: linear-gradient(to right, rgba(39, 48, 58, 0.4), rgba(39, 48, 58, 0.4)), url(../img/bg/herobg.webp);
+  background-image: linear-gradient(to right, rgba(39, 48, 58, 0.4), rgba(39, 48, 58, 0.4)), url(../img/bg/hero_background_mobile.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -563,6 +563,31 @@ body {
   animation: showRight 1.5s ease 0.1s;
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(39, 48, 58, 0.4), rgba(39, 48, 58, 0.4)), url(../img/bg/hero_background_mobile@2x.webp);
+  }
+}
+@media (min-width: 578px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(39, 48, 58, 0.4), rgba(39, 48, 58, 0.4)), url(../img/bg/hero_background_tablet.webp);
+  }
+}
+@media (min-width: 578px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 578px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(39, 48, 58, 0.4), rgba(39, 48, 58, 0.4)), url(../img/bg/hero_background_tablet@2x.webp);
+  }
+}
+@media (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(39, 48, 58, 0.4), rgba(39, 48, 58, 0.4)), url(../img/bg/hero_background.webp);
+  }
+}
+@media (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, rgba(39, 48, 58, 0.4), rgba(39, 48, 58, 0.4)), url(../img/bg/hero_background@2x.webp);
+  }
+}
 .backdrop {
   position: fixed;
   top: 0;
@@ -912,7 +937,7 @@ body {
     flex-basis: calc((100% - 30px) / 2);
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .team {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -980,6 +1005,8 @@ body {
     padding-top: 94px;
     padding-bottom: 94px;
   }
+}
+@media (min-width: 1200px) {
   .clients-list {
     flex-wrap: nowrap;
   }
@@ -1146,7 +1173,7 @@ body {
   align-items: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .footer {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1192,7 +1219,7 @@ body {
   color: rgba(255, 255, 255, 0.6);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .footer-info {
     align-items: self-start;
   }
@@ -1253,7 +1280,7 @@ body {
   gap: 10px;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .subscribe-form {
     display: block;
   }

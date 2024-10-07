@@ -4,7 +4,7 @@
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(to right, $colorOverlay, $colorOverlay),
-    url(../img/bg/herobg.webp);
+    url(../img/bg/hero_background_mobile.webp);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -30,4 +30,39 @@
 
 .hero__button {
   animation: showRight 1.5s ease 0.1s;
+}
+
+@media (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, $colorOverlay, $colorOverlay),
+      url(../img/bg/hero_background_mobile@2x.webp);
+  }
+}
+
+@media (min-width: 578px) {
+  .hero {
+    background-image: linear-gradient(to right, $colorOverlay, $colorOverlay),
+      url(../img/bg/hero_background_tablet.webp);
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(to right, $colorOverlay, $colorOverlay),
+        url(../img/bg/hero_background_tablet@2x.webp);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, $colorOverlay, $colorOverlay),
+      url(../img/bg/hero_background.webp);
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(to right, $colorOverlay, $colorOverlay),
+        url(../img/bg/hero_background@2x.webp);
+    }
+  }
 }
