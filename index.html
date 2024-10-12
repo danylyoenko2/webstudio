@@ -254,44 +254,72 @@
           <h2 class="work__title" data-aos="fade-up" data-aos-duration="600">
             Чим ми займаємося
           </h2>
-          <div class="work-list">
-            <div
-              class="work-list__item"
+          <ul class="work-list">
+            <li
+              class="work__item"
               data-aos="fade-right"
               data-aos-duration="600"
             >
-              <img
-                class="work-list__img"
-                src="./src/img/face/example/workspace.webp"
-                alt="Робоче місце"
-              />
-              <p class="work-list__subtext">декстопні додатки</p>
-            </div>
-            <div
-              class="work-list__item"
-              data-aos="zoom-in"
+              <picture class="work-list__photo">
+                <source
+                  srcset="
+                    ./src/img/face/example/workspace/workspace.webp    1x,
+                    ./src/img/face/example/workspace/workspace@2x.webp 2x
+                  "
+                />
+
+                <img
+                  class="work-list__img"
+                  src="./src/img/face/example/workspace/workspace.jpg"
+                  alt="Мобільні Додатки"
+                />
+              </picture>
+              <p class="work-list__subtext">десктопні додатки</p>
+            </li>
+            <li
+              class="work__item"
+              data-aos="fade-right"
               data-aos-duration="600"
             >
-              <img
-                class="work-list__img"
-                src="./src/img/face/example/mobile.webp"
-                alt="Телефон"
-              />
+              <picture class="work-list__photo">
+                <source
+                  srcset="
+                    ./src/img/face/example/mobile/mobile.webp    1x,
+                    ./src/img/face/example/mobile/mobile@2x.webp 2x
+                  "
+                />
+
+                <img
+                  class="work-list__img"
+                  src="./src/img/face/example/mobile/mobile.jpg"
+                  alt="Мобільні Додатки"
+                />
+              </picture>
               <p class="work-list__subtext">мобільні додатки</p>
-            </div>
-            <div
-              class="work-list__item"
-              data-aos="fade-left"
+            </li>
+
+            <li
+              class="work__item"
+              data-aos="fade-right"
               data-aos-duration="600"
             >
-              <img
-                class="work-list__img"
-                src="./src/img/face/example/tablet.webp"
-                alt="Планшет"
-              />
+              <picture class="work-list__photo">
+                <source
+                  srcset="
+                    ./src/img/face/example/tablet/tablet.webp    1x,
+                    ./src/img/face/example/tablet/tablet@2x.webp 2x
+                  "
+                />
+
+                <img
+                  class="work-list__img"
+                  src="./src/img/face/example/tablet/tablet.jpg"
+                  alt="Мобільні Додатки"
+                />
+              </picture>
               <p class="work-list__subtext">дизайнерські рішення</p>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </section>
       <section class="team">
@@ -303,13 +331,20 @@
             <!-- ====================================1============================ -->
 
             <article class="team__card team-member" data-aos="fade-right">
-              <div class="team-member__photo">
+              <picture class="team-member__photo">
+                <source
+                  srcset="
+                    ./src/img/face/team/igor/igor.webp    1x,
+                    ./src/img/face/team/igor/igor@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
                 <img
                   class="team-member__img"
-                  src="./src/img/face/team/igor.webp"
+                  src="./src/img/face/team/igor/igor.jpg"
                   alt="Ігор Дем'яненко"
                 />
-              </div>
+              </picture>
               <p class="team-member__name">Ігор Дем'яненко</p>
               <p class="team-member__education">Product Designer</p>
               <ul class="social-web">
@@ -354,13 +389,20 @@
             <!-- ====================================2============================ -->
 
             <article class="team__card team-member" data-aos="fade-up">
-              <div class="team-member__photo">
+              <picture class="team-member__photo">
+                <source
+                  srcset="
+                    ./src/img/face/team/olga/olga.webp    1x,
+                    ./src/img/face/team/olga/olga@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
                 <img
-                  class="team-member__photo"
-                  src="./src/img/face/team/olga.webp"
+                  class="team-member__img"
+                  src="./src/img/face/team/olga/olga.jpg"
                   alt="Ольга Рєпіна"
                 />
-              </div>
+              </picture>
               <p class="team-member__name">Ольга Рєпіна</p>
               <p class="team-member__education">Frontend Developer</p>
               <ul class="social-web">
@@ -404,13 +446,20 @@
             <!-- ====================================3============================ -->
 
             <article class="team__card team-member" data-aos="fade-up">
-              <div class="team-member__photo">
-                <img
-                  class="team-member__photo"
-                  src="./src/img/face/team/mikola.webp"
-                  alt="Микола Тарасов"
+              <picture class="team-member__photo">
+                <source
+                  srcset="
+                    ./src/img/face/team/mikola/mikola.webp    1x,
+                    ./src/img/face/team/mikola/mikola@2x.webp 2x
+                  "
+                  type="image/webp"
                 />
-              </div>
+                <img
+                  class="team-member__img"
+                  src="./src/img/face/team/mikola/mikola.jpg"
+                  alt="Ольга Рєпіна"
+                />
+              </picture>
               <p class="team-member__name">Микола Тарасов</p>
               <p class="team-member__education">Marketing</p>
               <ul class="social-web">
@@ -453,13 +502,20 @@
             <!-- ====================================4============================ -->
 
             <article class="team__card team-member" data-aos="fade-left">
-              <div class="team-member__photo">
-                <img
-                  class="team-member__photo"
-                  src="./src/img/face/team/mikhailo.webp"
-                  alt="Михайло Єрмаков"
+              <picture class="team-member__photo">
+                <source
+                  srcset="
+                    ./src/img/face/team/mikhailo/mikhailo.webp    1x,
+                    ./src/img/face/team/mikhailo/mikhailo@2x.webp 2x
+                  "
+                  type="image/webp"
                 />
-              </div>
+                <img
+                  class="team-member__img"
+                  src="./src/img/face/team/mikhailo/mikhailo.jpg"
+                  alt="Ольга Рєпіна"
+                />
+              </picture>
               <p class="team-member__name">Михайло Єрмаков</p>
               <p class="team-member__education">UI Designer</p>
               <ul class="social-web">

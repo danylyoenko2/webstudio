@@ -904,6 +904,7 @@ body {
 
 .team-member__photo {
   margin-bottom: 30px;
+  display: block;
 }
 
 .team__title {
@@ -1076,6 +1077,7 @@ body {
 }
 
 .portfolio-content__photo {
+  display: block;
   margin-bottom: 20px;
   position: relative;
   overflow: hidden;
