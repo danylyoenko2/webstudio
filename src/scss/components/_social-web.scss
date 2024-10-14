@@ -1,0 +1,35 @@
+.social-web {
+  @extend %flex-grid;
+  column-gap: 10px;
+}
+
+.social-web__icon {
+  width: 20px;
+  height: 20px;
+  fill: $colorClients;
+  transition: fill $animPrimery;
+}
+
+.social-web__link {
+  @extend %flex-grid;
+  width: 44px;
+  height: 44px;
+  transition: background-color $animPrimery;
+  border-radius: 100%;
+
+  &:hover {
+    background-color: $colorHover;
+  }
+
+  &:hover .social-web__icon {
+    fill: $colorMain;
+  }
+}
+
+.social-web__link--gray {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-web__icon--white {
+  fill: $colorMain;
+}

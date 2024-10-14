@@ -16,41 +16,46 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../css/reset.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/main.css" />
     <title>WebStudio</title>
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
-        <a href="#" class="header-link-logo"
-          ><img class="header-logo" src="../img/logo/WebStudio.svg" alt="лого"
+      <div class="container header__container">
+        <a href="../../index.html" class="logo"
+          ><img class="logo__photo" src="../img/logo/WebStudio.svg" alt="лого"
         /></a>
         <nav class="menu">
-          <ul class="menu-list">
-            <li class="menu-list-item">
-              <a class="menu-list-link" href="../../index.html">Студія</a>
+          <ul class="menu__list">
+            <li class="menu__item">
+              <a class="menu__link" href="../../index.html">Студія</a>
             </li>
-            <li class="menu-list-item">
-              <a class="menu-list-link link-active" href="#">Портфоліо</a>
+            <li class="menu__item">
+              <a class="menu__link link__active" href="#">Портфоліо</a>
             </li>
-            <li class="menu-list-item">
-              <a class="menu-list-link" href="#">Контакти</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Контакти</a>
             </li>
           </ul>
-          <ul class="menu-contact">
-            <li class="menu-contact-list">
-              <a class="menu-contact-link" href="mailto:info@devstudio.com">
-                <svg class="menu-contact-icon">
+          <ul class="menu__ contact contact-list">
+            <li class="contact__item contact__item--email">
+              <a
+                class="contact__link contact__link--email"
+                href="mailto:info@devstudio.com"
+              >
+                <svg class="contact__icon contact__icon--email">
                   <use href="../img/icons/symbol-defs.svg#icon-e-mail"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
-            <li class="menu-contact-list">
-              <a class="menu-contact-link" href="tel:+380961111111">
-                <svg class="menu-contact-icon">
+            <li class="contact__item contact__item--phone">
+              <a
+                class="contact__link contact__link--phone"
+                href="tel:+380961111111"
+              >
+                <svg class="phone contact__icon contact__icon--phone">
                   <use
                     href="../img/icons/symbol-defs.svg#icon-smartphone"
                   ></use>
@@ -59,345 +64,441 @@
               >
             </li>
           </ul>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href=" https://www.instagram.com/" class="social__link"
+                >instagram</a
+              >
+            </li>
+            <li class="social__item">
+              <a href="https://twitter.com/" class="social__link">twitter</a>
+            </li>
+            <li class="social__item">
+              <a href="https://facebook.com/" class="social__link">facebook</a>
+            </li>
+            <li class="social__item">
+              <a href="https://www.linkedin.com/" class="social__link"
+                >linkedIn</a
+              >
+            </li>
+          </ul>
         </nav>
+        <button class="mobile-menu__btn">
+          <span class="mobile-menu__stick"></span>
+        </button>
       </div>
     </header>
     <main class="main">
       <section class="portfolio">
-        <div class="container filter-container">
-          <ul class="portfolio-list">
-            <li class="portfolio-list-item">
-              <button class="portfolio-list-button" data-f="all">Усі</button>
+        <div class="container portfolio__container">
+          <ul class="portfolio__filters portfolio-list">
+            <li class="portfolio-list__item">
+              <button class="portfolio-list__button" data-f="all">Усі</button>
             </li>
-            <li class="portfolion-list-item">
-              <button class="portfolio-list-button" data-f="web">
+            <li class="portfolion-list__item">
+              <button class="portfolio-list__button" data-f="web">
                 Веб-сайти
               </button>
             </li>
-            <li class="portfolio-list-item">
-              <button class="portfolio-list-button" data-f="app">
+            <li class="portfolio-list__item">
+              <button class="portfolio-list__button" data-f="app">
                 Додатки
               </button>
             </li>
-            <li class="portfolio-list-item">
-              <button class="portfolio-list-button" data-f="design">
+            <li class="portfolio-list__item">
+              <button class="portfolio-list__button" data-f="design">
                 Дизайн
               </button>
             </li>
-            <li class="portfolio-list-item">
-              <button class="portfolio-list-button" data-f="marketing">
+            <li class="portfolio-list__item">
+              <button class="portfolio-list__button" data-f="marketing">
                 Маркетинг
               </button>
             </li>
           </ul>
-          <div class="portfolio-cards">
+          <div class="portfolio-content portfolio__cards">
             <!-- =====================================================1========================================================= -->
 
             <article
-              class="portfolio-card web"
+              class="portfolio-content__item web"
               data-aos="flip-up"
               data-aos-duration="650"
               data-aos-delay="50"
               data-aos-once="true"
             >
-              <div class="portfolio-card-photo">
+              <picture class="portfolio-content__photo">
+                <source
+                  srcset="
+                    ../img/portfolio/web/web.webp    1x,
+                    ../img/portfolio/web/web@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
                 <img
-                  class="portfolio-img"
-                  src="../img/portfolio/web-site.webp"
+                  class="portfolio-content__img"
+                  src="../img/portfolio/web/web.jpg"
                   alt="Веб-сайт"
                 />
-                <p class="portfolio-card-back">
+                <p class="portfolio-content__back">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
                   вичерпні відомості про компанію чи приватну особу.
                 </p>
-              </div>
-              <h3 class="portfolio-card-title">Технокряк</h3>
-              <p class="portfolio-card-name">Веб-сайт</p>
+              </picture>
+              <h3 class="portfolio-content__title">Технокряк</h3>
+              <p class="portfolio-content__name">Веб-сайт</p>
             </article>
 
             <!-- ======================================================2======================================================== -->
 
             <article
-              class="portfolio-card design"
+              class="portfolio-content__item design"
               data-aos="flip-up"
               data-aos-duration="650"
               data-aos-delay="150"
               data-aos-once="true"
             >
-              <div class="portfolio-card-photo">
+              <picture class="portfolio-content__photo">
+                <source
+                  srcset="
+                    ../img/portfolio/poster/poster.webp    1x,
+                    ../img/portfolio/poster/poster@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
                 <img
-                  class="pportfolio-img"
-                  src="../img/portfolio/design.webp"
+                  class="portfolio-content__img"
+                  src="../img/portfolio/poster/poster.jpg"
                   alt="Дизайн"
                 />
-                <p class="portfolio-card-back">
+                <p class="portfolio-content__back">
                   Надихаючий дизайн, що втілює гармонію та розкіш. Сучасна
                   естетика зустрічається з елегантною класикою, створюючи
                   унікальні та стильні рішення для вашого простору.
                 </p>
-              </div>
-              <h3 class="portfolio-card-title">
+              </picture>
+              <h3 class="portfolio-content__title">
                 Постер New Orleane vs Golden Star
               </h3>
-              <p class="portfolio-card-name">Дизайн</p>
+              <p class="portfolio-content__name">Дизайн</p>
             </article>
 
             <!-- =====================================================3========================================================= -->
 
             <article
-              class="portfolio-card app"
+              class="portfolio-content__item app"
               data-aos="flip-up"
               data-aos-duration="650"
               data-aos-delay="250"
               data-aos-once="true"
             >
-              <div class="portfolio-card-photo">
+              <picture class="portfolio-content__photo">
+                <source
+                  srcset="
+                    ../img/portfolio/seafood/seafood.webp    1x,
+                    ../img/portfolio/seafood/seafood@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
                 <img
-                  class="portfolio-img"
-                  src="../img/portfolio/appseafood.webp"
+                  class="portfolio-content__img"
+                  src="../img/portfolio/seafood/seafood.jpg"
                   alt="Додаток ресторан"
                 />
-                <p class="portfolio-card-back">
+                <p class="portfolio-content__back">
                   Ваш особистий гід у світі морських делікатесів. Легко знайдіть
                   найближчі ресторани з найсвіжішими морепродуктами,
                   переглядайте меню, бронюйте столи та отримуйте ексклюзивні
                   пропозиції – все в одному додатку!
                 </p>
-              </div>
-              <h3 class="portfolio-card-title">Ресторан Seafood</h3>
-              <p class="portfolio-card-name">Додаток</p>
+              </picture>
+              <h3 class="portfolio-content__title">Ресторан Seafood</h3>
+              <p class="portfolio-content__name">Додаток</p>
             </article>
 
             <!-- ====================================================4========================================================== -->
 
             <article
-              class="portfolio-card marketing"
+              class="portfolio-content__item marketing"
               data-aos="flip-up"
               data-aos-duration="650"
               data-aos-delay="350"
               data-aos-once="true"
             >
-              <div class="portfolio-card-photo">
+              <picture class="portfolio-content__photo">
+                <source
+                  srcset="
+                    ../img/portfolio/prime/prime.webp    1x,
+                    ../img/portfolio/prime/prime@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
                 <img
-                  class="portfolio-img"
-                  src="../img/portfolio/marketingheadphone.webp"
+                  class="portfolio-content__img"
+                  src="../img/portfolio/prime/prime.jpg"
                   alt="Маркетинг навушники"
                 />
-                <p class="portfolio-card-back">
+                <p class="portfolio-content__back">
                   Інноваційні маркетингові рішення для зростання вашого бізнесу.
                   Ми поєднуємо креативність і аналітику, щоб створювати
                   ефективні стратегії, що залучають клієнтів і підвищують ваш
                   бренд на новий рівень.
                 </p>
-              </div>
-              <h3 class="portfolio-card-title">Проєкт Prime</h3>
-              <p class="portfolio-card-name">Маркетинг</p>
+              </picture>
+              <h3 class="portfolio-content__title">Проєкт Prime</h3>
+              <p class="portfolio-content__name">Маркетинг</p>
             </article>
 
             <!-- =====================================================5========================================================= -->
 
             <article
-              class="portfolio-card app"
+              class="portfolio-content__item app"
               data-aos="flip-up"
               data-aos-duration="650"
               data-aos-delay="450"
               data-aos-once="true"
             >
-              <div class="portfolio-card-photo">
+              <picture class="portfolio-content__photo">
+                <source
+                  srcset="
+                    ../img/portfolio/boxes/boxes.webp    1x,
+                    ../img/portfolio/boxes/boxes@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
                 <img
-                  class="portfolio-img"
-                  src="../img/portfolio/appboxes.webp"
+                  class="portfolio-content__img"
+                  src="../img/portfolio/boxes/boxes.webp"
                   alt="Додаток коробки"
                 />
-                <p class="portfolio-card-back">
+                <p class="portfolio-content__back">
                   Розумні рішення для організації вашого цифрового простору. Цей
                   додаток допоможе структурувати файли, завдання та нотатки в
                   зручні «коробки», роблячи вашу роботу ефективнішою та
                   впорядкованою.
                 </p>
-              </div>
-              <h3 class="portfolio-card-title">Проєкт Boxes</h3>
-              <p class="portfolio-card-name">Додаток</p>
+              </picture>
+              <h3 class="portfolio-content__title">Проєкт Boxes</h3>
+              <p class="portfolio-content__name">Додаток</p>
             </article>
 
             <!-- =====================================================6========================================================= -->
 
             <article
-              class="portfolio-card web"
+              class="portfolio-content__item web"
               data-aos="flip-up"
               data-aos-duration="650"
               data-aos-delay="550"
               data-aos-once="true"
             >
-              <div class="portfolio-card-photo">
+              <picture class="portfolio-content__photo">
+                <source
+                  srcset="
+                    ../img/portfolio/inspiration/inspiration.webp    1x,
+                    ../img/portfolio/inspiration/inspiration@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
                 <img
-                  class="portfolio-img"
-                  src="../img/portfolio/web-siteborders.webp"
+                  class="portfolio-content__img"
+                  src="../img/portfolio/inspiration/inspiration.jpg"
                   alt="Веб-сайт стіни"
                 />
-                <p class="portfolio-card-back">
+                <p class="portfolio-content__back">
                   Платформа, яка об'єднує креативних людей з усього світу.
                   Діліться своїми ідеями, знаходьте натхнення та співпрацюйте з
                   іншими, щоб створювати проєкти, що виходять за межі уяви.
                 </p>
-              </div>
-              <h3 class="portfolio-card-title">Inspiration has no Borders</h3>
-              <p class="portfolio-card-name">Веб-сайт</p>
+              </picture>
+              <h3 class="portfolio-content__title">
+                Inspiration has no Borders
+              </h3>
+              <p class="portfolio-content__name">Веб-сайт</p>
             </article>
 
             <!-- ======================================================7======================================================== -->
 
             <article
-              class="portfolio-card design"
+              class="portfolio-content__item design"
               data-aos="flip-up"
               data-aos-duration="650"
               data-aos-delay="50"
               data-aos-once="true"
             >
-              <div class="portfolio-card-photo">
+              <picture class="portfolio-content__photo">
+                <source
+                  srcset="
+                    ../img/portfolio/limited_edition/limited_edition.webp    1x,
+                    ../img/portfolio/limited_edition/limited_edition@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
                 <img
-                  class="portfolio-img"
-                  src="../img/portfolio/designnewspaper.webp"
+                  class="portfolio-content__img"
+                  src="../img/portfolio/limited_edition/limited_edition.jpg"
                   alt="Дизайн газети"
                 />
-                <p class="portfolio-card-back">
+                <p class="portfolio-content__back">
                   Ексклюзивне видання для справжніх цінителів дизайну. Відкрийте
                   для себе унікальні концепти, рідкісні інтерв'ю та свіжі
                   тренди, які формують майбутнє креативної індустрії
                 </p>
-              </div>
-              <h3 class="portfolio-card-title">Видання Limited Edition</h3>
-              <p class="portfolio-card-name">Дизайн</p>
+              </picture>
+              <h3 class="portfolio-content__title">Видання Limited Edition</h3>
+              <p class="portfolio-content__name">Дизайн</p>
             </article>
 
             <!-- ========================================================8====================================================== -->
 
             <article
-              class="portfolio-card marketing"
+              class="portfolio-content__item marketing"
               data-aos="flip-up"
               data-aos-duration="650"
               data-aos-delay="150"
               data-aos-once="true"
             >
-              <div class="portfolio-card-photo">
+              <picture class="portfolio-content__photo">
+                <source
+                  srcset="
+                    ../img/portfolio/lab/lab.webp    1x,
+                    ../img/portfolio/lab/lab@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
                 <img
-                  class="portfolio-img"
-                  src="../img/portfolio/marketingLAB.webp "
+                  class="portfolio-content__img"
+                  src="../img/portfolio/lab/lab.jpg "
                   alt="Маркетинг ЛАБ"
                 />
-                <p class="portfolio-card-back">
+                <p class="portfolio-content__back">
                   Маркетинговий проєкт, де ідеї народжуються і тестуються. Ми
                   експериментуємо з нестандартними підходами та інструментами,
                   щоб знайти ефективні рішення для вашого бренду.
                 </p>
-              </div>
-              <h3 class="portfolio-card-title">Проєкт LAB</h3>
-              <p class="portfolio-card-name">Маркетинг</p>
+              </picture>
+              <h3 class="portfolio-content__title">Проєкт LAB</h3>
+              <p class="portfolio-content__name">Маркетинг</p>
             </article>
 
             <!-- ===================================================9=========================================================== -->
 
             <article
-              class="portfolio-card app"
+              class="portfolio-content__item app"
               data-aos="flip-up"
               data-aos-duration="650"
               data-aos-delay="250"
               data-aos-once="true"
             >
-              <div class="portfolio-card-photo">
+              <picture class="portfolio-content__photo">
+                <source
+                  srcset="
+                    ../img/portfolio/bussines/bussines.webp    1x,
+                    ../img/portfolio/bussines/bussines@2x.webp 2x
+                  "
+                  type="image/webp"
+                />
                 <img
-                  class="portfolio-img"
-                  src="../img/portfolio/appbussines.webp"
+                  class="portfolio-content__img"
+                  src="../img/portfolio/bussines/bussines.jpg"
                   alt="Додаток бізнес"
                 />
-                <p class="portfolio-card-back">
+                <p class="portfolio-content__back">
                   Ваш незамінний інструмент для розвитку бізнесу. Відстежуйте
                   прогрес, аналізуйте дані та отримуйте персоналізовані
                   рекомендації для сталого зростання вашої компанії.
                 </p>
-              </div>
-              <h3 class="portfolio-card-title">Growing Business</h3>
-              <p class="portfolio-card-name">Додаток</p>
+              </picture>
+              <h3 class="portfolio-content__title">Growing Business</h3>
+              <p class="portfolio-content__name">Додаток</p>
             </article>
           </div>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="container footer-container">
+      <div class="container footer__container">
         <div class="footer-info">
-          <a class="footer-logo" href="#"
+          <a class="footer__logo logo" href="#"
             ><img
-              class="logo-img"
+              class="logo__img"
               src="../img/logo/WebStudio_footer.svg"
               alt="лого"
           /></a>
-          <div class="footer-menu">
-            <ul class="footer-list">
-              <li class="footer-list-item">
-                <address class="footer-list-address">
-                  м.Київ, пр-т Лесі Українки, 26
-                </address>
-              </li>
-              <li class="footer-list-item">
-                <a class="footer-list-link" href="#">info@devstudio.com</a>
-              </li>
-              <li class="footer-list-item">
-                <a class="footer-list-link" href="#">+38 096 111 11 11</a>
-              </li>
-            </ul>
-          </div>
+          <ul class="footer-list">
+            <li class="footer-list__item">
+              <address class="footer-list__address">
+                м.Київ, пр-т Лесі Українки, 26
+              </address>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="#">info@devstudio.com</a>
+            </li>
+            <li class="footer-list__item">
+              <a class="footer-list__link" href="#">+38 096 111 11 11</a>
+            </li>
+          </ul>
         </div>
-        <div class="footer-webnetworks">
-          <h2 class="footer-webnetwork-title">Приєднуйтесь</h2>
-          <ul class="webnetworks">
-            <li class="webnetwork">
-              <a href="https://instagram.com/" class="webnetwork-link">
-                <svg class="footer-webnetwork-icon">
+        <div class="footer-webnetworks webnetworks">
+          <h2 class="footer-webnetworks__title">Приєднуйтесь</h2>
+          <ul class="social-web">
+            <li class="social-web__item">
+              <a
+                href="https://instagram.com/"
+                class="social-web__link social-web__link--gray"
+              >
+                <svg class="social-web__icon social-web__icon--white">
                   <use href="../img/icons/symbol-defs.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
-            <li class="webnetwork">
-              <a href="https://twitter.com/" class="webnetwork-link">
-                <svg class="footer-webnetwork-icon">
+            <li class="social-web__item">
+              <a
+                href="https://twitter.com/"
+                class="social-web__link social-web__link--gray"
+              >
+                <svg class="social-web__icon social-web__icon--white">
                   <use href="../img/icons/symbol-defs.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
-            <li class="webnetwork">
-              <a href="https://facebook.com/" class="webnetwork-link">
-                <svg class="footer-webnetwork-icon">
+            <li class="social-web__item">
+              <a
+                href="https://facebook.com/"
+                class="social-web__link social-web__link--gray"
+              >
+                <svg class="social-web__icon social-web__icon--white">
                   <use href="../img/icons/symbol-defs.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
-            <li class="webnetwork">
-              <a href="https://www.linkedin.com/" class="webnetwork-link">
-                <svg class="footer-webnetwork-icon">
+            <li class="social-web__item">
+              <a
+                href="https://www.linkedin.com/"
+                class="social-web__link social-web__link--gray"
+              >
+                <svg class="social-web__icon social-web__icon--white">
                   <use href="../img/icons/symbol-defs.svg#icon-in"></use>
                 </svg>
               </a>
             </li>
           </ul>
         </div>
-        <form action="" class="footer-form">
-          <h4 class="form-title">Підпишіться на розсилку</h4>
-          <div class="form-container">
-            <div class="footer-form-field">
-              <label for="email-footer" class="footer-form-label"></label>
+        <form action="send" class="footer__form subscribe-form">
+          <h4 class="subscribe-form__title">Підпишіться на розсилку</h4>
+          <div class="subscribe-form__wrapper">
+            <div class="subscribe-form__field">
+              <label for="email-footer" class="subscribe-form__label"></label>
               <input
                 type="email"
                 id="email-footer"
                 required
                 placeholder="E-mail"
-                class="footer-form-input"
+                class="subscribe-form__input"
               />
             </div>
-            <button class="footer-form-btn">
+            <button class="subscribe-form__button button">
               Підписатися
-              <svg class="form-btn-icon">
+              <svg class="button__icon">
                 <use href="../img/icons/symbol-defs.svg#icon-icon-send"></use>
               </svg>
             </button>
@@ -406,6 +507,7 @@
       </div>
     </footer>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/menu.js"></script>
     <script>
       AOS.init();
     </script>
