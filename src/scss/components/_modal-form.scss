@@ -1,0 +1,80 @@
+.contact-form__wrapper {
+  @include formWrapper;
+  margin-bottom: 10px;
+}
+
+.contact-form__label {
+  display: flex;
+  color: $colorAdvantages;
+  margin-bottom: 4px;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  align-items: flex-start;
+}
+
+.contact-form__wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.contact-form__input {
+  width: 100%;
+  padding-top: 11px;
+  padding-bottom: 11px;
+}
+
+#text {
+  padding: 16px 12px;
+  height: 95px;
+  margin-bottom: 20px;
+}
+
+.contact-form__icon {
+  width: 18px;
+  height: 18px;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+
+.contact-form__comment {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  width: 370px;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  margin-bottom: 20px;
+}
+
+.contact-form__comment:hover,
+.contact-form__comment:focus {
+  outline: 1px solid $colorHover;
+  fill: $colorHover;
+}
+
+.contact-checkbox__field {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 30px;
+  font-size: 12px;
+  color: $colorAdvantages;
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+  .contact-form__comment {
+    width: 240px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact-form__comment {
+    width: 450px;
+  }
+
+  .contact-checkbox__field {
+    font-size: 14px;
+  }
+}

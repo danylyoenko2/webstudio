@@ -1,0 +1,39 @@
+.btn__close {
+  position: absolute;
+  top: 6px;
+  right: 0;
+}
+
+.modal__close__icon {
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  transition: transform $animSlowly;
+}
+
+.modal__close__icon:hover {
+  fill: $colorHover;
+  transform: rotate(180deg);
+  border-radius: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.contact-btn__input {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  text-align: center;
+  width: 16px;
+  height: 15px;
+}
+
+.accept__btn--span {
+  color: $colorHover;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+}
+
+.contact-form__button {
+  padding: 10px 52px;
+}

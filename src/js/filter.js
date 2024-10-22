@@ -1,9 +1,9 @@
 "use strict";
 
-const filterBox = document.querySelectorAll(".portfolio-card");
+const filterBox = document.querySelectorAll(".portfolio-content__item");
 
 document
-  .querySelector(".filter-container")
+  .querySelector(".portfolio__container")
   .addEventListener("click", (event) => {
     if (event.target.tagName !== "BUTTON") return false;
 
