@@ -55,7 +55,7 @@
   letter-spacing: 0.03em;
 }
 
-@media (min-width: 578px) {
+@media (min-width: 480px) {
   .advantages__item {
     flex-basis: calc((100% - 30px) / 2);
   }

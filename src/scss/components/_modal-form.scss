@@ -63,6 +63,12 @@
   color: $colorAdvantages;
 }
 
+@media (min-width: 320px) and (max-width: 400px) {
+  .contact-form__comment {
+    width: 240px;
+  }
+}
+
 @media (min-width: 1200px) {
   .contact-form__comment {
     width: 450px;

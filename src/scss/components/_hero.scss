@@ -39,7 +39,7 @@
   }
 }
 
-@media (min-width: 578px) {
+@media (min-width: 480px) {
   .hero {
     background-image: linear-gradient(to right, $colorOverlay, $colorOverlay),
       url(../img/bg/hero_background_tablet.webp);

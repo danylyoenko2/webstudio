@@ -11,7 +11,7 @@
   opacity: 1;
   transition: opacity $animSlowly;
   transition: transform $animSlowly;
-  max-width: 450px;
+  max-width: 400px;
 }
 
 .modal:hover {
@@ -29,6 +29,12 @@
   letter-spacing: 0.03em;
   color: $colorDefault;
   margin-bottom: 12px;
+}
+
+@media (min-width: 320px) and (max-width: 400px) {
+  .modal {
+    max-width: 320px;
+  }
 }
 
 @media (min-width: 1200px) {
