@@ -1,0 +1,17 @@
+.button {
+  @extend %button;
+  padding: 10px 32px;
+  background-color: $colorHover;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  transition: background-color $animPrimery;
+
+  &:hover {
+    background-color: $colorBtnHover;
+  }
+}
+
+.button__icon {
+  width: 24px;
+  height: 24px;
+}

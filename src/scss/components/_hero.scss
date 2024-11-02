@@ -1,0 +1,68 @@
+.hero {
+  background-color: $colorBackgroung;
+  text-align: center;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  background-image: linear-gradient(to right, $colorOverlay, $colorOverlay),
+    url(../img/bg/hero_background_mobile.webp);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.hero__container {
+  @extend %flex-grid;
+  flex-direction: column;
+  row-gap: 30px;
+}
+
+.hero__title {
+  max-width: 696px;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 136%;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  text-align: center;
+  color: $colorPage;
+  animation: showLeft 1.5s ease 0s;
+}
+
+.hero__button {
+  animation: showRight 1.5s ease 0.1s;
+}
+
+@media (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(to right, $colorOverlay, $colorOverlay),
+      url(../img/bg/hero_background_mobile@2x.webp);
+  }
+}
+
+@media (min-width: 480px) {
+  .hero {
+    background-image: linear-gradient(to right, $colorOverlay, $colorOverlay),
+      url(../img/bg/hero_background_tablet.webp);
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(to right, $colorOverlay, $colorOverlay),
+        url(../img/bg/hero_background_tablet@2x.webp);
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .hero {
+    background-image: linear-gradient(to right, $colorOverlay, $colorOverlay),
+      url(../img/bg/hero_background.webp);
+  }
+
+  @media (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(to right, $colorOverlay, $colorOverlay),
+        url(../img/bg/hero_background@2x.webp);
+    }
+  }
+}
